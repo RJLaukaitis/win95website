@@ -1,0 +1,44 @@
+.taskbar{
+    background-color: #c0c0c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing:border-box;
+    font-family: 'Pixelated MS Sans Serif', 'Arial', sans-serif;
+}
+
+.start-button{
+    display: flex;
+    align-items: center;
+}
+
+.start-button img {
+    width: 20px;
+    height: auto;
+    margin-right: 2px;
+    background-color: white; /* Assuming your taskbar background is also white */
+    mix-blend-mode: multiply;
+}
+
+.taskbar-buttons{
+    flex-grow: 1;
+}
+
+/* .taskbar-app-button {
+    /*add more taskbar buttons*/
+*/
+
+.system-tray .clock{
+    /*add more styling*/
+    font-size: 10px;
+}
+
+/*Moves start button to align with button press*/
+.start-button:active .start-logo,
+.start-button.button:active .start-logo { /* Adjust based on actual class names used */
+  transform: translate(1px, 1px); /* Moves the image down and to the right by 1px */
+}
