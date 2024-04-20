@@ -1,9 +1,87 @@
 .start-menu {
     position: absolute;
-    bottom: 40px;
-    left:0;
+    bottom: 25px;
+    height: 250px;
+    left:10px;
     width: 250px;
-    background: teal;
+    background: #c0c0c0;
     border: 1px solid #000;
     z-index:10;
+}
+
+
+
+.start-menu::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    background-color: #808080;
+}
+
+.shutdownIcon {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 40px;
+    margin-top: 134px;
+    cursor: pointer;
+    color: black;
+    background-color: #c0c0c0;
+    padding-left: 0px;
+    width: 210px;
+    border-top: 1px solid black;
+    box-shadow:  0 1 5px white inset;
+}
+
+/* Style for the text within the shutdown icon - should be consistent with shutdownIcon if they are the same */
+.Shutdown-text {
+    margin-left: 10px;
+    font-size: medium;
+    color: black;
+    background-color: transparent;
+}
+
+.shutdownIcon:hover, .shutdownIcon:hover .Shutdown-text {
+    background-color: #000080;
+    color: white; 
+}
+
+.Laukaitis-text{
+    transform:rotate(-90deg);
+    transform-origin: left top;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 250%;
+    left: 5px;
+    top: 240px;
+    width: 10px;
+    bottom: 0;
+    background: #808080;
+    color: #c0c0c0;
+    white-space: nowrap;
+}
+
+.OS-text{
+    transform:rotate(-90deg);
+    transform-origin: left top;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 250%;
+    font-style: italic;
+    left: 5px;
+    top: 77px;
+    width: 50px;
+    bottom: 0;
+    background: #808080;
+    color: white;
+    white-space: nowrap;
+    background: #50B3CF;
+        background: linear-gradient(to right, #50B3CF 28%, #0DCF4B 52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

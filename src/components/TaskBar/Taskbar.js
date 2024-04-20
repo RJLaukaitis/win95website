@@ -31,7 +31,7 @@ function Taskbar() {
   
     return (
       <div className="taskbar">
-        <button className="start-button button">
+        <button className="start-button button" onClick={toggleStartMenu}>
           <img src={WindowsLogo} alt="Start" className="start-logo" />
           <span>Start</span>
         </button>
