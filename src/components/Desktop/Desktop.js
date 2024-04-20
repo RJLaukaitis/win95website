@@ -5,9 +5,11 @@ import PortfolioIcon from "../../images/DocumentIcon.png";
 import SolitaireIcon from "../../images/solitaireIcon.png";
 import DraggableWindow from '../DraggableWindow/DraggableWindow.js';
 import HelpIcon from "../../images/HelpIcon.png";
+import Draggable from 'react-draggable';
 
 function Desktop() {
     const [isSolitaireOpen, setIsSolitaireOpen] = useState(false);
+    const [isDragging, setIsDragging] = useState(false);
 
     return (
         <div className="desktop">
@@ -17,7 +19,11 @@ function Desktop() {
 
             <Icon label="Solitaire" imgSrc={SolitaireIcon} onClick={() => setIsSolitaireOpen(true)} />
             {isSolitaireOpen && (
-                <div className="window" style={{width: '51vw'}}>
+            <Draggable handle=".title-bar"
+                onStart={()=> setIsDragging(true)}
+                onStop={()=> setIsDragging(false)}
+            >
+                <div className={`window ${isDragging ? 'dragging' : ''}`} style={{width: '51vw'}}>
                     <div className="title-bar">
                         <div className="title-bar-text">Solitaire</div>
                         <div className="title-bar-controls">
@@ -29,7 +35,8 @@ function Desktop() {
                     <div className="window-body">
                         <iframe src="Solitaire/index.html" title="Solitaire" style={{ width: '50vw', height: '50vh',border:'none' }}></iframe>
                     </div>
-                </div>                
+                </div>
+            </Draggable>                
             )}
             {/* Add dragging functionality */}
         </div>

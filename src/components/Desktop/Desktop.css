@@ -70,3 +70,9 @@ html, body, #root {
     cursor: pointer;
 }
 
+.dragging{
+    opacity: .5;
+    border: 2px dotted gray;
+    background-color: transparent;
+}
+
