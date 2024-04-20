@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'WindowsRegular';
+    src: url("../../Fonts/Windows\ Regular.ttf") format(truetype);
+}
+
 .desktop {
     background-color: #008080;/*classic teal color*/
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
     overflow: hidden;
 
@@ -12,3 +20,53 @@ html, body, #root {
     margin: 0;
     padding: 0;
 }
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Pixelated MS Sans Serif', sans-serif;
+    margin: 5px;
+}
+.icon-label {
+    color: white;
+    font-family: 'Pixelated MS Sans Serif', Arial, sans-serif;
+    margin-top: 4px;
+    user-select: none;
+}
+.icon img {
+    pointer-events: none;
+}
+
+.game-modal {
+    position: fixed;
+    top: 10%; /* Position it slightly from the top */
+    left: 10%; /* Position it slightly from the left */
+    width: 80%; /* Smaller width */
+    height: 80%; /* Smaller height */
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc; /* Optional: adds a border for better window appearance */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Optional: adds shadow for depth */
+}
+
+.game-modal iframe {
+    width: 100%;
+    height: 100%; 
+    border: none;
+}
+
+.game-modal button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+

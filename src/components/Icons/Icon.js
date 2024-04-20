@@ -1,10 +1,10 @@
 import React from "react";
 
-function Icon({ label, imgSrc }) {
+function Icon({ label, imgSrc, onClick}) {
     return (
-        <div className="icon">
-            <img src="{imgSrc}" alt={label} style={{width: '32px', height: '32px'}} />
-            <p>{label}</p>
+        <div className="icon" onClick={onClick}>
+            <img src={imgSrc} alt={label} style={{width: '32px', height: '32px'}} />
+            <p className="icon-label">{label}</p>
         </div>
     );
 }
