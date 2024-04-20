@@ -1,7 +1,10 @@
 
 import React, {useState, useEffect} from "react";
 import './Taskbar.css';
+import '../StartMenu/StartMenu'
+import '../StartMenu/StartMenu.css'
 import WindowsLogo from '../../images/Windows_logo.png';
+import StartMenu from "../StartMenu/StartMenu";
 
 function Taskbar() {
     // State to hold the current time
@@ -19,6 +22,12 @@ function Taskbar() {
   
     // Format the time as a string
     const timeString = currentTime.toLocaleTimeString();
+
+    const [startMenuVisible, setStartMenuVisible] = useState(false);
+
+    const toggleStartMenu = () => {
+      setStartMenuVisible(!startMenuVisible);
+    };
   
     return (
       <div className="taskbar">
@@ -31,6 +40,7 @@ function Taskbar() {
             {timeString}
           </div>
         </div>
+        {startMenuVisible && <StartMenu />}
       </div>
     );
   }

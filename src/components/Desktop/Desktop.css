@@ -44,8 +44,8 @@ html, body, #root {
     position: fixed;
     top: 10%; /* Position it slightly from the top */
     left: 10%; /* Position it slightly from the left */
-    width: 80%; /* Smaller width */
-    height: 80%; /* Smaller height */
+    width: 100%; /* Smaller width */
+    height: 100%; /* Smaller height */
     background: rgba(0, 0, 0, 0.75);
     z-index: 1000;
     display: flex;
