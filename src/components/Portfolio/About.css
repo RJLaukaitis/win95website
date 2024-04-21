@@ -1,0 +1,64 @@
+@font-face {
+    font-family: MagicalNight;
+    src: url(../../Fonts/Magical\ Night.ttf);
+}
+@font-face {
+    font-family: Millenium;
+    src: url(../../Fonts/Millennium.ttf);
+}
+
+.About-content{
+    margin-left: 160px;
+    width: calc(73% - 24px);
+    font-style: bold;
+    overflow: hidden; /* Ensures content is scrollable if it overflows */
+    background-color: white;
+    width: 40vw;
+    height: 60vh;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.Welcome{
+    font-family: MagicalNight;
+    font-size: 48px;
+    margin-left: 12px;
+}
+
+.paragraph{
+    padding-left: 5px;
+    font-family: 'Millennium';
+    color: #414a4c;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0 12px;
+    word-wrap: break-word;
+}
+
+
+.vertical-menu {
+    margin-top: 31px;
+    width: 18%; /* or whatever width you prefer */
+    height: 89.5%;
+    position: fixed; /* Make it stick to the side of the window */
+    left: 0;
+    top: 0;
+    background-color: white; /* Dark background for the menu */
+    display: flex;
+    flex-direction: column; /* Align menu items vertically */
+    padding-top: 20px; /* Space at the top */
+  }
+  
+  .vertical-menu a {
+    font-size: medium;
+    padding: 35px 20px;
+    font-family: Millennium;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .vertical-menu a:hover,
+  .vertical-menu a.active {
+    background-color: #555; /* Slightly lighter on hover and for active link */
+  }

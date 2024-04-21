@@ -6,12 +6,12 @@
 .desktop {
     background-color: #008080;/*classic teal color*/
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    position: relative;
+    align-items: start;
     overflow: hidden;
+    flex-wrap: wrap;
 
 }
 
@@ -24,11 +24,13 @@ html, body, #root {
  .icon {
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
     align-items: center;
     text-align: center;
     cursor: pointer;
     font-family: 'Pixelated MS Sans Serif', sans-serif;
     margin: 5px;
+    position: relative;
 }
  .icon-label {
     color: white;
@@ -38,6 +40,10 @@ html, body, #root {
 }
  .icon img {
     pointer-events: none;
+}
+
+.window {
+    position: absolute;
 }
 
 .game-modal {
@@ -69,10 +75,38 @@ html, body, #root {
     font-size: 16px;
     cursor: pointer;
 }
+.dragging .window-body{
+    opacity: 0;
+    border: none;
 
-.dragging{
-    opacity: .5;
-    border: 2px dotted gray;
-    background-color: transparent;
+}
+.dragging .title-bar{
+    opacity: 0;
+    border: none;
+}
+.dragging .iframe{
+    opacity: 0;
+    border: none;
+}
+
+.window.dragging{
+    outline: 2px dashed #000;
+    background: transparent;
+    border: none;
+}
+
+.window {
+    position: absolute;
+    min-width: 30vw;
+    min-height: 30vh;
+    max-width: 65vw;
+    max-height: 65vh;
+}
+
+.window-body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
 }
 
