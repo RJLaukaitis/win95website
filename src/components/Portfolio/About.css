@@ -56,23 +56,29 @@
     word-wrap: break-word;
 }
 
-.about-me-paragraph-2 {
-    padding-left: 5px;
-    font-family: 'Millennium';
-    color: #414a4c;
-    font-style: normal;
-    font-size: 16px;
-    margin: 0 12px;
+.interest-title{
+    font-family: MagicalNight;
+    color: black;
+    font-style: bold;
+    margin: 0 0px;
+    font-size: 25px;
     word-wrap: break-word;
 }
 
-.about-me-paragraph-3 {
-    padding-left: 5px;
+
+.interest-paragraph {
     font-family: 'Millennium';
     color: #414a4c;
     font-style: normal;
     font-size: 16px;
-    margin: 0 12px;
+    word-wrap: break-word;
+}
+
+.interest-paragraph-2 {
+    font-family: 'Millennium';
+    color: #414a4c;
+    font-style: normal;
+    font-size: 16px;
     word-wrap: break-word;
 }
 
@@ -90,34 +96,29 @@
     color: #414a4c;
     font-style: oblique;
     font-size: 16px;
-
     margin: 0 12px;
     word-wrap: break-word;
 }
 
-.ME-image img{
-    width: 10vw; /* 30% of the viewport width */
-    height: auto; /* maintains the aspect ratio */
-    display: block;
-    margin-left: 60%;
-    margin-right: auto;
-}
-
-.ME-image p{
-    padding-left: 450px;
+.about-me-paragraph-4 p2 {
     font-family: MidnightBlack;
     color: #414a4c;
     font-style: oblique;
     font-size: 16px;
-
-    margin: 0 12px;
     word-wrap: break-word;
+    float: right;
+    padding-left: 47%;
 }
 
-
+.ME-image img {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 25%;
+}
 
 .about-me-paragraph-4 {
-    padding-left: 5px;
+    padding-left: 4px;
     font-family: 'Millennium';
     color: #414a4c;
     font-style: normal;
@@ -125,7 +126,6 @@
     margin: 0 12px;
     word-wrap: break-word;
 }
-
 
 .vertical-menu {
     margin-top: 31px;

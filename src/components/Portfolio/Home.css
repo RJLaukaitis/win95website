@@ -45,6 +45,9 @@
     text-decoration: none;
     color: #007BFF;
 }
+.nav-link:active {
+    color:red;
+}
 
 .nav-link:hover {
     text-decoration: underline;
