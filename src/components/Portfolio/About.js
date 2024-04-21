@@ -64,7 +64,7 @@ const About = () => {
                 </div>
                 <div className="interest-paragraph-2">
                     <p>
-                        On the more technical side of things, I've been learning Blender to create 3d scenes and renders (How I created this scene!). Blender is great for me to explore my creative side and I'm always proud of the results I achieve. You can see a more detailed view of my work over on the projects page!
+                        On the more technical side of things, I've been learning Blender to create 3d scenes and renders (How I created this scene!). Blender is great for me to explore my creative side and I'm always proud of the results I achieve. You can see a more detailed view of my work over on the projects page.
                     </p>
                 </div>
             </div>

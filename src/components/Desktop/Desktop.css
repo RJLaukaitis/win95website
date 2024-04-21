@@ -75,23 +75,13 @@ html, body, #root {
     font-size: 16px;
     cursor: pointer;
 }
-.dragging .window-body{
-    opacity: 0;
-    border: none;
-
-}
-.dragging .title-bar{
-    opacity: 0;
-    border: none;
-}
-.dragging .iframe{
-    opacity: 0;
-    border: none;
+.dragging .window-body, .dragging .title-bar, .dragging .iframe {
+    opacity: 0.5; /* More visible than fully transparent */
 }
 
-.window.dragging{
+.window.dragging {
     outline: 2px dashed #000;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
     border: none;
 }
 

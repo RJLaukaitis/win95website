@@ -1,0 +1,67 @@
+@font-face {
+    font-family: MagicalNight;
+    src: url(../../Fonts/Magical\ Night.ttf);
+}
+@font-face {
+    font-family: Millenium;
+    src: url(../../Fonts/Millennium.ttf);
+}
+
+
+.Projects-content{
+    margin-left: 160px;
+    width: calc(73% - 24px);
+    font-style: bold;
+    overflow: hidden;
+    background-color: white;
+    width: 40vw;
+    height: 60vh;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.Projects{
+    font-family: MagicalNight;
+    font-size: 48px;
+    margin-left: 12px;
+}
+
+.introduction{
+    padding-left: 5px;
+    font-family: 'Millennium';
+    color: #414a4c;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0 12px;
+    word-wrap: break-word;
+}
+
+.category-box{
+    background-color: transparent; /* Classic grey background */
+    border: 2px outset black; /* 3D effect border */
+    display: flex;
+    align-items: center; /* This will vertically center the contents */
+    justify-content: flex-start; /* This will align the contents to the start of the box */
+    padding: 16px;
+    margin-left: 110px;
+    width: 500px; /* Adjust width as necessary */
+    margin-bottom: 10px;
+    height: 75px; /* Adjust height as necessary */
+    cursor: pointer;
+    font-family: MagicalNight;
+    font-size: 32px;
+}
+
+.category-box img {
+    margin-right: 8px; /* Keep space between image and text */
+    width: 60px; /* Fixed width for all images */
+    height: 60px; /* Fixed height for all images */
+    object-fit: contain; /* This will ensure the image is fully visible */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.category-box:hover {
+    border-color: #808080; /* Darker border color on hover */
+    background-color: #d0d0d0; /* Slightly darker background on hover */
+}

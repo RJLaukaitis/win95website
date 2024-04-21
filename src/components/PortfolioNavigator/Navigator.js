@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "../Portfolio/Home";
 import About from "../Portfolio/About";
 import '98.css';
-import Desktop from "../Desktop/Desktop";
+import Projects from "../Portfolio/Projects";
 
 function Navigator(){
     return (
@@ -12,6 +12,7 @@ function Navigator(){
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
             </Routes>
         </Router>
     );
