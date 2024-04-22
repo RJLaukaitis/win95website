@@ -126,30 +126,3 @@
     margin: 0 12px;
     word-wrap: break-word;
 }
-
-.vertical-menu {
-    margin-top: 31px;
-    margin-left: 10px;
-    width: 17%; /* or whatever width you prefer */
-    height: 89.9%;
-    position: fixed; /* Make it stick to the side of the window */
-    left: 0;
-    top: 0;
-    background-color: white; /* Dark background for the menu */
-    display: flex;
-    flex-direction: column; /* Align menu items vertically */
-    padding-top: 18px; /* Space at the top */
-  }
-  
-  .vertical-menu a {
-    font-size: medium;
-    padding: 35px 20px;
-    font-family: Millennium;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .vertical-menu a:hover,
-  .vertical-menu a.active {
-    background-color: #555; /* Slightly lighter on hover and for active link */
-  }

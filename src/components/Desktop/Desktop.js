@@ -58,7 +58,7 @@ function Desktop() {
                             </div>
                         </div>
                         <div className="window-body">
-                            <iframe src="Solitaire/index.html" title="Solitaire" style={{ width: '100%', height: '100%', border: 'none' }}></iframe>
+                            <iframe src="Solitaire/index.html" title="Solitaire"style={{ width: '50vw', height: '50vh', border: 'none' }}></iframe>
                         </div>
                     </div>
             </Draggable>                

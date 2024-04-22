@@ -4,6 +4,7 @@ import Home from "../Portfolio/Home";
 import About from "../Portfolio/About";
 import '98.css';
 import Projects from "../Portfolio/Projects";
+import Contact from "../Portfolio/Contact";
 
 function Navigator(){
     return (
@@ -13,6 +14,7 @@ function Navigator(){
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
     );
