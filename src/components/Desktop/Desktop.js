@@ -39,8 +39,6 @@ function Desktop() {
                     </div>
             </Draggable>                
             )}
-
-            <Icon label="Help" imgSrc={HelpIcon}/>
             <Icon label="Solitaire" imgSrc={SolitaireIcon} onClick={() => setIsSolitaireOpen(true)} />
             {isSolitaireOpen && (
             <Draggable handle=".title-bar"

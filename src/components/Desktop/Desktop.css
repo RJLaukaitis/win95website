@@ -2,6 +2,10 @@
     font-family: 'WindowsRegular';
     src: url("../../Fonts/Windows\ Regular.ttf") format(truetype);
 }
+@font-face {
+    font-family: 'Millennium';
+    src: url("../../Fonts/Millennium.ttf") format(truetype);
+}
 
 .desktop {
     background-color: #008080;/*classic teal color*/
@@ -28,7 +32,7 @@ html, body, #root {
     align-items: center;
     text-align: center;
     cursor: pointer;
-    font-family: 'Pixelated MS Sans Serif', sans-serif;
+    font-family: 'Millennium', sans-serif;
     margin: 5px;
     position: relative;
 }
@@ -40,6 +44,9 @@ html, body, #root {
 }
  .icon img {
     pointer-events: none;
+    min-width: 50px;
+    min-height:50px;
+    background-size: cover;
 }
 
 .window {
