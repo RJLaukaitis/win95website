@@ -29,7 +29,7 @@ const Projects = () => {
             </div>
             <div className="introduction">
                 <p>
-                    Here you can find various projects I've worked on, categorized by type for ease of browsing. Click on any category that interests you to find detailed information and specifics!
+                    Here you can find various projects I've worked on, categorized by type, for ease of browsing. Click on any category that interests you to find detailed information and specifics!
                 </p>
                 <hr class= "solid"></hr>
             </div>

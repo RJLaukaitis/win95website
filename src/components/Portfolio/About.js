@@ -23,7 +23,7 @@ const About = () => {
                     I'm currently a sophomore at Lehigh University working towards a dual bachelors of science degree in Computer Science & Business.
                 </p>
                 <p>
-                    Thank you for stopping by my portfolio. This page was inspired by Henry Heffernan's personal portfolio which can be found here. It was a joy to create this site and refine my javascript and css skills, so please enjoy.
+                    Thank you for stopping by my portfolio. This page was inspired by Henry Heffernan's personal portfolio which can be found here. It was a joy to create this site from the ground-up in React and javaScript so please enjoy.
                 </p>
             </div>
             <hr class= "solid"></hr>
@@ -56,7 +56,7 @@ const About = () => {
             </div>
             <div className="interest-paragraph">
                 <p>
-                     In my free time, I really enjoy keeping busy and active. Hitting the gym after class or going for a run around campus is a great way for me to shake off a long day and unwind. On the weekends, you can often find me out on the golf course. I've recently gotten back into regular play and it has quickly become one of my favorite hobbies. Even though I usually shoot way over par, I can always be happy about the experience and come up with ways to improve for next time.
+                     In my free time, I really enjoy keeping busy and active. Hitting the gym after class or going for a run around campus is a great way for me to shake off a long day and unwind. On the weekends, you can often find me out on the golf course. I've recently gotten back into playing and it has quickly become one of my favorite hobbies. Even though I usually shoot way over par, I can always be happy about the experience and come up with ways to improve for next time.
                 </p>
             </div>
                 <div className="ME-image">
@@ -64,7 +64,7 @@ const About = () => {
                 </div>
                 <div className="interest-paragraph-2">
                     <p>
-                        On the more technical side of things, I've been learning Blender to create 3d scenes and renders (How I created this scene!). Blender is great for me to explore my creative side and I'm always proud of the results I achieve. You can see a more detailed view of my work over on the projects page.
+                        On the more technical side of things, I've been learning Blender to create 3d scenes and renders (How I created this office space!). Blender is great for me to explore my creative side and I'm always proud of the results I achieve. You can see a more detailed view of my work over on the projects page.
                     </p>
                 </div>
             </div>

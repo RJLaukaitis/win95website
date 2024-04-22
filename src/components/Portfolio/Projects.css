@@ -39,7 +39,7 @@
 
 .category-box{
     background-color: transparent; /* Classic grey background */
-    border: 2px outset black; /* 3D effect border */
+    border: 2px outset #c0c0c0; /* 3D effect border */
     display: flex;
     align-items: center; /* This will vertically center the contents */
     justify-content: flex-start; /* This will align the contents to the start of the box */
