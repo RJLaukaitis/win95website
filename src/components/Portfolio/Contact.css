@@ -1,0 +1,111 @@
+@font-face {
+    font-family: MagicalNight;
+    src: url(../../Fonts/Magical\ Night.ttf);
+}
+@font-face {
+    font-family: Millenium;
+    src: url(../../Fonts/Millennium.ttf);
+}
+
+
+.ContactHeader{
+    height: 25px;
+}
+.contact-content{
+    font-family: Magicalnight;
+    margin-left: 161px;
+    width: calc(73% - 24px);
+    font-style: bold;
+    overflow: hidden;
+    background-color: white;
+    width: 40vw;
+    height: 60vh;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.introduction{
+    margin-left: 0px;
+}
+
+.success-message{
+    font-family: millennium;
+    margin-top: 5px;
+    font-size: large;
+    padding-left: 10px;
+    color: green;
+    background-color: #c0c0c0;
+    width: 49%;
+}
+
+.PersonalEmail{
+    font-size: medium;
+    padding-top: 10px;
+    margin-left: 5px;
+    color: black;
+    font-family: Millennium;
+    font-style: bold;
+}
+
+.EmailLink{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+.contact-form label {
+    font-family: Millennium;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    /* add more styles */
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: Millennium;
+    width: 75%;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border: 1px solid #ccc;
+    /* add more styles */
+}
+
+.required-asterisk{
+    font-family: MagicalNight;
+    font-size: large;
+    font-style: bold;
+    color: red;
+}
+.send-message-button {
+    z-index: 15;
+    margin-right: 480px;
+}
+.vertical-menu {
+    margin-top: 31px;
+    margin-left: 10px;
+    width: 17%; /* or whatever width you prefer */
+    height: 89.9%;
+    position: fixed; /* Make it stick to the side of the window */
+    left: 0;
+    top: 0;
+    background-color: white; /* Dark background for the menu */
+    display: flex;
+    flex-direction: column; /* Align menu items vertically */
+    padding-top: 18px; /* Space at the top */
+  }
+  
+  .vertical-menu a {
+    font-size: medium;
+    padding: 35px 20px;
+    font-family: Millennium;
+    text-decoration: underline;
+  }
+  
+  .vertical-menu a:hover,
+  .vertical-menu a.active {
+    
+  }

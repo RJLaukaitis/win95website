@@ -1,0 +1,21 @@
+.vertical-menu .menu-item {
+    padding: 15px;
+    display: block; /* Adjust as necessary */
+    color: black;
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .vertical-menu .menu-item .star {
+    color: transparent; /* Hide the star initially */
+    margin-right: 5px; /* Adjust spacing as needed */
+    align-items: center;
+  }
+  
+  /* When a menu item is active, change the star color */
+  .vertical-menu .menu-item:active{
+    color: red; /* This will apply the red color when the link is active */
+  }
+.vertical-menu .menu-item.active .star {
+  color: red;
+}
