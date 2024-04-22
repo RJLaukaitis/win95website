@@ -10,6 +10,7 @@
 
 .ContactHeader{
     height: 25px;
+    margin-left: 5px;
 }
 .contact-content{
     font-family: Magicalnight;
@@ -56,6 +57,7 @@
 
 
 .contact-form label {
+    margin-left: 5px;
     font-family: Millennium;
     display: block;
     margin-bottom: 5px;
@@ -69,6 +71,7 @@
     width: 75%;
     font-size: 12px;
     margin-bottom: 15px;
+    margin-left: 5px;
     padding-bottom: 5px;
     border: 1px solid #ccc;
     /* add more styles */
@@ -84,28 +87,5 @@
     z-index: 15;
     margin-right: 480px;
 }
-.vertical-menu {
-    margin-top: 31px;
-    margin-left: 10px;
-    width: 17%; /* or whatever width you prefer */
-    height: 89.9%;
-    position: fixed; /* Make it stick to the side of the window */
-    left: 0;
-    top: 0;
-    background-color: white; /* Dark background for the menu */
-    display: flex;
-    flex-direction: column; /* Align menu items vertically */
-    padding-top: 18px; /* Space at the top */
-  }
+ 
   
-  .vertical-menu a {
-    font-size: medium;
-    padding: 35px 20px;
-    font-family: Millennium;
-    text-decoration: underline;
-  }
-  
-  .vertical-menu a:hover,
-  .vertical-menu a.active {
-    
-  }

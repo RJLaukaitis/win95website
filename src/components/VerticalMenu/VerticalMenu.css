@@ -1,21 +1,41 @@
+.vertical-menu {
+  margin-top: 31px;
+  margin-left: 10px;
+  width: 165px; /* Set a fixed width in pixels */
+  min-width: 165px; /* Minimum width to prevent resizing smaller than desired */
+  min-height: 58.1vh; /* Set height relative to the viewport height */
+  height: 58.1vh;
+  position: fixed; /* Keeps the menu at the specified position */
+  left: 0;
+  top: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px; /* Fixed padding at the top */
+}
+
 .vertical-menu .menu-item {
-    padding: 15px;
-    display: block; /* Adjust as necessary */
-    color: black;
-    text-decoration: none;
-    outline: none;
-  }
-  
-  .vertical-menu .menu-item .star {
-    color: transparent; /* Hide the star initially */
-    margin-right: 5px; /* Adjust spacing as needed */
-    align-items: center;
-  }
-  
-  /* When a menu item is active, change the star color */
-  .vertical-menu .menu-item:active{
-    color: red; /* This will apply the red color when the link is active */
-  }
+  padding: 15px;
+  display: block;
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
+
+.vertical-menu .menu-item .star {
+  color: transparent;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.vertical-menu .menu-item:active,
 .vertical-menu .menu-item.active .star {
-  color: red;
+  color: red; /* Red color for active state */
+}
+
+.vertical-menu a {
+  font-size: medium;
+  padding: 35px 20px;
+  font-family: 'Millennium', sans-serif; /* Ensure the font name is correctly declared */
+  text-decoration: underline;
 }

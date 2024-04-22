@@ -92,6 +92,7 @@ html, body, #root {
 
 .window {
     position: absolute;
+    overflow: hidden;
     min-width: 30vw;
     min-height: 30vh;
     max-width: 65vw;
@@ -99,6 +100,7 @@ html, body, #root {
 }
 
 .window-body{
+    overflow-y: hidden;
     width: 100%;
     height: auto;
     overflow-x: auto;
