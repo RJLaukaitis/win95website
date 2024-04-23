@@ -1,0 +1,38 @@
+@font-face {
+    font-family: MagicalNight;
+    src: url(../../Fonts/Magical\ Night.ttf);
+}
+@font-face {
+    font-family: Millenium;
+    src: url(../../Fonts/Millennium.ttf);
+}
+
+.Blender-content{
+    margin-left: 160px;
+    width: calc(73% - 24px);
+    font-style: bold;
+    overflow: hidden; /* Ensures content is scrollable if it overflows */
+    background-color: white;
+    width: 40vw;
+    height: 60vh;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.Blender{
+    font-family: MagicalNight;
+    font-size: 48px;
+    margin-left: 12px;
+    height: 70px;
+}
+
+.Text{
+    padding-left: 5px;
+    font-family: 'Millennium';
+    color: #414a4c;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0 12px;
+    word-wrap: break-word;
+}
