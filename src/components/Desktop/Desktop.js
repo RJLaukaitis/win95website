@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Navigator from '../PortfolioNavigator/Navigator.js';
 import Icon from "../Icons/Icon.js";
 import Draggable from 'react-draggable';
-import { Resizable } from 're-resizable';
 import '98.css';
+import { Resizable, ResizableBox } from 'react-resizable';
 import './Desktop.css'; // Make sure your styles don't conflict with 98.css
 
 import PortfolioIcon from "../../images/DocumentIcon.png";
@@ -37,7 +37,7 @@ function Desktop() {
                             <Navigator/>
                         </div>
                     </div>
-            </Draggable>                
+            </Draggable>
             )}
             <Icon label="Solitaire" imgSrc={SolitaireIcon} onClick={() => setIsSolitaireOpen(true)} />
             {isSolitaireOpen && (

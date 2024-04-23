@@ -35,6 +35,7 @@ html, body, #root {
     font-family: 'Millennium', sans-serif;
     margin: 5px;
     position: relative;
+    z-index: 0;
 }
  .icon-label {
     color: white;
@@ -97,6 +98,7 @@ html, body, #root {
     min-height: 30vh;
     max-width: 65vw;
     max-height: 65vh;
+    z-index: 30;
 }
 
 .window-body{
