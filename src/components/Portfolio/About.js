@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { redirect, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './About.css';
 import VerticalMenu from '../VerticalMenu/verticalmenu';
@@ -8,7 +8,6 @@ import MEImage from '../../images/composite.png';
 
 const About = () => {
     const navigate = useNavigate();
-
     const handleContactClick= () => navigate('/contact');
 
     return (
@@ -23,7 +22,7 @@ const About = () => {
                     I'm currently a sophomore at Lehigh University working towards a dual bachelors of science degree in Computer Science & Business.
                 </p>
                 <p>
-                    Thank you for stopping by my portfolio. This page was inspired by Henry Heffernan's personal portfolio which can be found here. It was a joy to create this site from the ground-up in React and javaScript so please enjoy.
+                    Thank you for stopping by my portfolio. This page was inspired by Henry Heffernan's personal portfolio which can be found <a href="https://henryheffernan.com/">here</a>. It was a joy to create this site from the ground-up in React and javaScript so please enjoy.
                 </p>
             </div>
             <hr class= "solid"></hr>

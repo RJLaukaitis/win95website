@@ -47,6 +47,10 @@
     word-wrap: break-word;
 }
 
+.introduction a {
+    color: blue;
+}
+
 .about-me-paragraph {
     padding-left: 5px;
     font-family: 'Millennium';

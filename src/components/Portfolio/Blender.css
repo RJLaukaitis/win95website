@@ -36,3 +36,17 @@
     margin: 0 12px;
     word-wrap: break-word;
 }
+
+.video1{
+    margin-left: 85px;
+}
+
+.video1-caption{
+    padding-left: 85px;
+    font-family: MidnightBlack;
+    color: black;
+    font-style: oblique;
+    font-size: 16px;
+    margin: 0 12px;
+    word-wrap: break-word;
+}
