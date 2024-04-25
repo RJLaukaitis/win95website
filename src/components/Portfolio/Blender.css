@@ -50,3 +50,10 @@
     margin: 0 12px;
     word-wrap: break-word;
 }
+
+.Earth-images{
+    display: flex;
+    flex-direction: row;
+    width: 20vw; /* 30% of the viewport width */
+    height: 10vw;
+}

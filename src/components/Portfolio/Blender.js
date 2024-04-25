@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './Blender.css';
 import VerticalMenu from '../VerticalMenu/verticalmenu';
 import Gargantua from "../../Videos/Gargantua.mp4";
+import Earth1 from "../../images/Earth3.png"
+import Earth2 from "../../images/Earth4.png"
 
 const Blender = () => {
 
@@ -31,8 +33,12 @@ const Blender = () => {
                     
 
                     <p>
-                        Another scene I worked on was a flyover of earth as seen from Low-Earth-Orbit (LEO). This project utilized
+                        Another scene I worked on was a photo realistic earth as seen from Low-Earth-Orbit. This project utilized official Earth surface scans, heightmaps, and cloud maps provided by Nasa. The surface is achieved by using a texture coordinate node with several layers of masking to effectively separate the ocean from the land. This allows me to control the specularity and roughness to ensure the land appears rougher and the ocean has some shine to it. To produce the atmosphere, the surface sphere was duplicated with a new material applied to it. The new material uses several Vector and Math nodes to dissipate the blueish tint and "raise" it above the surface.
                     </p>
+                    <div className="Earth-images">
+                    <img src = {Earth1} alt="" />
+                    <img src = {Earth2} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
