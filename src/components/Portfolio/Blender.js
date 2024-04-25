@@ -28,7 +28,7 @@ const Blender = () => {
                         <source src={Gargantua} type="video/mp4"></source>
                     </video>
                     <p className="video1-caption">
-                            Figure 1: Gargantua zoomed in. Rendered at 1920x1080 with 64 samples
+                            Figure 1: Gargantua zoomed in. Rendered at 1920x1080 with 128 samples.
                         </p>
                     
 
@@ -39,6 +39,10 @@ const Blender = () => {
                     <img src = {Earth1} alt="" />
                     <img src = {Earth2} alt="" />
                     </div>
+                    <p className="earth-caption">
+                        Figures 2, 3: Earth closeups rendered at 1920x1080 with 64 samples.
+
+                    </p>
                 </div>
             </div>
         </div>
