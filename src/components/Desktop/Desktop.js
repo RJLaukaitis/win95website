@@ -10,6 +10,7 @@ import 'react-resizable/css/styles.css'; // Import CSS for resizable component
 import PortfolioIcon from "../../images/DocumentIcon.png";
 import SolitaireIcon from "../../images/solitaireIcon.png";
 import CardIcon from "../../images/mailbox.png";
+import CardVideo from "../../Videos/Card.mp4";
 
 function Desktop() {
     const [isSolitaireOpen, setIsSolitaireOpen] = useState(false);
@@ -80,9 +81,10 @@ function Desktop() {
                             </div>
                         </div>
                         <div className="window-body">
-
+                            <video muted className="CardVideo" height="500" width ="750" autoplay >
+                                <source src={CardVideo} type="video/mp4"></source>
+                            </video>
                         </div>
-
                     </div>
                 </Draggable>
             )}
