@@ -14,7 +14,7 @@ const Blender = () => {
             <VerticalMenu/>
             <div className="Blender-content">
                 <div className="Blender">
-                    <h1>Blender</h1>
+                    <h1>Renders</h1>
                 </div>
                 <hr class = "solid"></hr>
                 <div className="Text">

@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './VerticalMenu.css'; // Make sure you import your stylesheet
+import './VerticalMenu.css';
 
 function VerticalMenu() {
   const activeStyle = { color: 'red' }; // Style object for the active state
+
 
   return (
     <div className="vertical-menu">

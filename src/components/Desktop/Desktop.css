@@ -98,7 +98,7 @@ html, body, #root {
     min-height: 30vh;
     max-width: 65vw;
     max-height: 65vh;
-    z-index: 30;
+    z-index: 10;
 }
 
 .window-body{
@@ -106,5 +106,24 @@ html, body, #root {
     width: 100%;
     height: auto;
     overflow-x: auto;
+}
+
+.react-resizable{
+    z-index: 10;
+}
+
+
+.react-resizable-handle {
+    position: absolute;
+    z-index: 10;
+}
+
+.react-resizable-handle-se {
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    cursor: se-resize;
 }
 
