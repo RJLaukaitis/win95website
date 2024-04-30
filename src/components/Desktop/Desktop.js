@@ -63,7 +63,29 @@ function Desktop() {
                         </div>
                 </Draggable>
             )}
-            <Icon label="Bcard.jpg" imgSrc={CardIcon} onClick={() => setIsCardOpen(true)} />
+            <Icon label="Businesscard" imgSrc={CardIcon} onClick={() => setIsCardOpen(true)} />
+            {isCardOpen && (
+                <Draggable handle='.title-bar'
+                onStart={()=> setIsDragging(true)}
+                onStop={()=> setIsDragging(false)}
+                defaultPosition={{x:300,y:100}}
+                >
+                    <div className={`window ${isDragging ? 'dragging' : ''}`}>
+                        <div className="title-bar">
+                            <div className="title-bar-text">bus.card</div>
+                            <div className="title-bar-controls">
+                                    <button aria-label="Minimize" />
+                                    <button aria-label="Maximize" />
+                                    <button aria-label="Close" onClick={() => setIsCardOpen(false)} />
+                            </div>
+                        </div>
+                        <div className="window-body">
+
+                        </div>
+
+                    </div>
+                </Draggable>
+            )}
         </div>
     );
 }
