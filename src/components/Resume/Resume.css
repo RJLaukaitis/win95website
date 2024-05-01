@@ -1,0 +1,41 @@
+@font-face {
+    font-family: MagicalNight;
+    src: url(../../Fonts/Magical\ Night.ttf);
+}
+@font-face {
+    font-family: Millenium;
+    src: url(../../Fonts/Millennium.ttf);
+}
+
+.ResumeDownload{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding-left: 5px;
+    font-size: 12px;
+    border: 2px solid black;
+    border-left-width: 0;
+    border-right-width: 0;
+    width:100%;
+    align-items: center;
+}
+
+.desc{
+    font-style: normal;
+    margin-top:5px;
+    font-size:18px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.dtext{
+    font-size: 12px;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.gif{
+    width: 180px;
+    height: auto;
+    margin-left: 15px;
+}

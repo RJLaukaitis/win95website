@@ -5,6 +5,7 @@ import './About.css';
 import VerticalMenu from '../VerticalMenu/verticalmenu';
 import WorkImage from '../../images/work.jpg';
 import MEImage from '../../images/composite.png';
+import Resume from "../Resume/Resume.js";
 
 const About = () => {
     const navigate = useNavigate();
@@ -25,6 +26,7 @@ const About = () => {
                     Thank you for stopping by my portfolio. I built this page from the ground up in React, javaScript, and CSS. I used Henry Heffernan's 2022 portfolio as a reference while developing the site, his page can be found <a href="https://henryheffernan.com/">here</a>. Please enjoy.
                 </p>
             </div>
+            <Resume/>
             <hr class= "solid"></hr>
             <div className="about-me-title">
                 About Me
