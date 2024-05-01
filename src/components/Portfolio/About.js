@@ -27,7 +27,7 @@ const About = () => {
                 </p>
             </div>
             <Resume/>
-            <hr class= "solid"></hr>
+            {/* <hr class= "solid"></hr> */}
             <div className="about-me-title">
                 About Me
             </div>

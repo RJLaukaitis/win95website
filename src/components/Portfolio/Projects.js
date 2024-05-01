@@ -5,7 +5,7 @@ import './Projects.css';
 import VerticalMenu from '../VerticalMenu/verticalmenu';
 import CategoryBox from '../CategoryBox/CategoryBox';
 import softwareGif from '../../images/Softwaregif.gif'
-import blenderGif from '../../images/blender.gif';
+import blenderGif from '../../images/Blender.gif';
 import loadingGif from '../../images/loading.gif';
 
 const Projects = () => {

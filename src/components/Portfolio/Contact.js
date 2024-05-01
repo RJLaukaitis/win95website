@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './Contact.css';
 import VerticalMenu from "../VerticalMenu/verticalmenu";
 import emailjs from 'emailjs-com';
+import Resume from "../Resume/Resume.js"
 
 const Contact = () => {
     // State hooks to keep track of input values and submission status
