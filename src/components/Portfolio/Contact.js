@@ -64,7 +64,12 @@ const Contact = () => {
 
                     <button type="submit" className="send-message-button">Send Message</button>
                 </form>
+                <div className="resume">
+                <Resume/>
+
+                </div>
             </div>
+
         </div>
     );
 };

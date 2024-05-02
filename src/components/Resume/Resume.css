@@ -7,6 +7,12 @@
     src: url(../../Fonts/Millennium.ttf);
 }
 
+@font-face {
+    font-family: Pixel;
+    src: url(../../Fonts/Windows\ Regular.ttf);
+}
+
+
 .ResumeDownload{
     display: flex;
     align-items: center;
@@ -28,16 +34,16 @@
 }
 .desc{
     font-family: Millennium;
-    font-style: bold;
     font-size:18px;
     color: black;
     margin-bottom: 5px;
+    margin-top:5px;
 }
 
 .dtext{
-    font-size: 12px;
+    font-family: Millennium;
+    font-size: 16px;
     flex-direction: column;
-    margin-left: 36px;
     margin-bottom: 5px;
 }
 

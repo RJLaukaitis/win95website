@@ -7,6 +7,11 @@
     src: url(../../Fonts/Millennium.ttf);
 }
 
+.resume{
+    margin-top:5px;
+    padding-bottom: 25px;
+}
+
 
 .ContactHeader{
     height: 25px;
