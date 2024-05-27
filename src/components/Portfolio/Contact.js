@@ -62,7 +62,7 @@ const Contact = () => {
                     <label htmlFor="message"><span className="required-asterisk">*</span> Message:</label>
                     <textarea id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
 
-                    <button type="submit" className="send-message-button">Send Message</button>
+                    <button type="submit" className="send-message-button">Send</button>
                 </form>
                 <div className="resume">
                 <Resume/>
