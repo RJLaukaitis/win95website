@@ -14,8 +14,8 @@
     font-style: bold;
     overflow: hidden;
     background-color: white;
-    width: 40vw;
-    height: 60vh;
+    width: 57vw;
+    height: 85vh;
     word-wrap: break-word;
     overflow-x: hidden;
     overflow-y: auto;
@@ -45,7 +45,7 @@
     align-items: center; /* This will vertically center the contents */
     justify-content: flex-start; /* This will align the contents to the start of the box */
     padding: 16px;
-    margin-left: 110px;
+    margin-left: 100px;
     width: 500px; /* Adjust width as necessary */
     margin-bottom: 10px;
     height: 75px; /* Adjust height as necessary */

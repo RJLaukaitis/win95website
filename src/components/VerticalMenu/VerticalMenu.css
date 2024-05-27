@@ -1,17 +1,16 @@
 .vertical-menu {
   margin-top: 31px;
   margin-left: 10px;
-  width: 165px; 
-  min-width: 165px;
-  min-height: 58.1vh;
-  height: 58.1vh;
-  position: fixed; 
+  width: 165px; /* Set a fixed width in pixels */
+  min-width: 165px; /* Minimum width to prevent resizing smaller than desired */
+  min-height: 82vh; /* Set height relative to the viewport height */
+  position: fixed; /* Keeps the menu at the specified position */
   left: 0;
   top: 0;
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding-top: 18px; 
+  padding-top: 18px; /* Fixed padding at the top */
 }
 
 .vertical-menu .menu-item {
@@ -30,18 +29,18 @@
 
 .vertical-menu .menu-item:active,
 .vertical-menu .menu-item.active .star {
-  color: red; 
+  color: red; /* Red color for active state */
 }
 
 .vertical-menu a {
   font-size: medium;
   padding: 35px 20px;
-  font-family: 'Millennium', sans-serif; 
+  font-family: 'Millennium', sans-serif; /* Ensure the font name is correctly declared */
   text-decoration: underline;
 }
 
 .submenu {
-  padding-left: 20px; 
+  padding-left: 20px; /* Indent submenu items */
 }
 
 .submenu-item {

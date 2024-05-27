@@ -56,17 +56,17 @@ html, body, #root {
 
 .game-modal {
     position: fixed;
-    top: 10%; 
-    left: 10%;
-    width: 100%;
-    height: 100%; 
+    top: 10%; /* Position it slightly from the top */
+    left: 10%; /* Position it slightly from the left */
+    width: 100%; /* Smaller width */
+    height: 100%; /* Smaller height */
     background: rgba(0, 0, 0, 0.75);
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ccc; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5); 
+    border: 2px solid #ccc; /* Optional: adds a border for better window appearance */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Optional: adds shadow for depth */
 }
 
 .game-modal iframe {
@@ -82,22 +82,22 @@ html, body, #root {
     cursor: pointer;
 }
 .dragging .window-body, .dragging .title-bar, .dragging .iframe {
-    opacity: 0.5;
+    opacity: 0.5; /* More visible than fully transparent */
 }
 
 .window.dragging {
     outline: 2px dashed #000;
-    background: rgba(255, 255, 255, 0.5); 
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
     border: none;
 }
 
 .window {
     position: absolute;
     overflow: hidden;
-    min-width: 30vw;
-    min-height: 30vh;
+    min-width: 70vw;
+    min-height: 60vh;
     max-width: 65vw;
-    max-height: 65vh;
+    max-height: 92vh;
     z-index: 10;
 }
 

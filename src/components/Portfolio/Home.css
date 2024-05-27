@@ -10,8 +10,8 @@
     text-align: center;
     overflow: auto; /* Ensures content is scrollable if it overflows */
     background-color: white;
-    width: 50vw;
-    height: 60vh;
+    width: 69vw;
+    height: 85vh;
 }
 
 .home-header {
