@@ -64,7 +64,7 @@ function Desktop() {
                         </div>
                 </Draggable>
             )}
-            <Icon label="Businesscard" imgSrc={CardIcon} onClick={() => setIsCardOpen(true)} />
+            {/* <Icon label="Businesscard" imgSrc={CardIcon} onClick={() => setIsCardOpen(true)} />
             {isCardOpen && (
                 <Draggable handle='.title-bar'
                 onStart={()=> setIsDragging(true)}
@@ -87,7 +87,7 @@ function Desktop() {
                         </div>
                     </div>
                 </Draggable>
-            )}
+            )} */}
         </div>
     );
 }

@@ -55,6 +55,7 @@
     justify-content: space-around;
     display: flex;
     flex-direction: row;
+    padding-left: 90px;
     gap: 10px;
     width: 20vw; /* 30% of the viewport width */
     height: 10vw;

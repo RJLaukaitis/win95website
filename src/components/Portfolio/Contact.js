@@ -3,6 +3,7 @@ import './Contact.css';
 import VerticalMenu from "../VerticalMenu/verticalmenu";
 import emailjs from 'emailjs-com';
 import Resume from "../Resume/Resume.js"
+import sentsound from "../../Audio/sentsound.mp3";
 
 const Contact = () => {
     // State hooks to keep track of input values and submission status
@@ -20,6 +21,8 @@ const Contact = () => {
         setFormData(prevState => ({ ...prevState, [name]: value }));
     };
 
+
+    var sentAudio = new Audio(sentsound);
     // Handle form submission
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -28,6 +31,8 @@ const Contact = () => {
             console.log('Email successfully sent!', result.text);
             setFormData({name: '', email: '', company: '', message: ''}); // Clear form
             setEmailSent(true); // Indicate email was sent successfully
+            sentAudio.play();
+            
         }, (error) => {
             console.log('Failed to send email.', error.text);
             setEmailSent(false); // Optionally handle error state
@@ -48,7 +53,7 @@ const Contact = () => {
                 Email Address: <span className="EmailLink">Rjlaukaitis@gmail.com</span>
                 </div>
                 <hr className="solid"></hr>
-                {emailSent && <div className="success-message">Your message has been sent successfully!</div>}
+                {emailSent && <div className="success-message">Message Sent!</div>}
                 <form onSubmit={handleSubmit} className="contact-form">
                     <label htmlFor="name"><span className="required-asterisk">*</span> Your name:</label>
                     <input id="name" type="text" name="name" value={formData.name} onChange={handleChange} required />
