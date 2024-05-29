@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Navigator from '../PortfolioNavigator/Navigator.js';
 import Icon from "../Icons/Icon.js";
 import Draggable from 'react-draggable';
-import { Resizable, ResizableBox } from 'react-resizable';
 import pcNoise from "../../Audio/Ambience.mp3";
 import clickNoise from "../../Audio/MouseClick.wav";
 import '98.css';
@@ -15,7 +14,6 @@ import SolitaireIcon from "../../images/solitaireIcon.png";
 function Desktop() {
     const [isSolitaireOpen, setIsSolitaireOpen] = useState(false);
     const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
-    const [isCardOpen, setIsCardOpen] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
 
     useEffect(() => {
@@ -29,7 +27,7 @@ function Desktop() {
         const ambience = new Audio(pcNoise);
         ambience.loop = true;
         ambience.volume = 0.1;
-        //ambience.play();
+        ambience.play();
 
         window.addEventListener('mousedown', playClickSound);
 
@@ -45,7 +43,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    defaultPosition={{x: 300, y: 100}}
+                    defaultPosition={{x: 50, y: 25}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
                             <div className="title-bar">

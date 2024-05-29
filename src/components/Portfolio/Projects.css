@@ -12,9 +12,8 @@
     margin-left: 160px;
     width: calc(73% - 24px);
     font-style: bold;
-    overflow: hidden;
     background-color: white;
-    width: 57vw;
+    width: 70vw;
     height: 85vh;
     word-wrap: break-word;
     overflow-x: hidden;
@@ -24,6 +23,7 @@
 .Projects{
     font-family: MagicalNight;
     font-size: 48px;
+    color: black;
     margin-left: 12px;
     height: 75px;    
 }
@@ -45,13 +45,15 @@
     align-items: center; /* This will vertically center the contents */
     justify-content: flex-start; /* This will align the contents to the start of the box */
     padding: 16px;
-    margin-left: 100px;
+    margin-left:35px;
     width: 500px; /* Adjust width as necessary */
     margin-bottom: 10px;
     height: 75px; /* Adjust height as necessary */
     cursor: pointer;
     font-family: MagicalNight;
     font-size: 32px;
+    color: black;
+
 }
 
 .category-box img {

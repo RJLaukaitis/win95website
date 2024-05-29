@@ -95,17 +95,16 @@ html, body, #root {
 .window {
     position: absolute;
     overflow: hidden;
-    min-width: 70vw;
-    min-height: 60vh;
-    max-width: 65vw;
-    max-height: 92vh;
+    max-width: 90vw;
+    max-height: 90vh;
     z-index: 10;
 }
 
 .window-body{
     overflow-y: hidden;
     width: 100%;
-    height: auto;
+    word-wrap: break-word;
+    height: 85vh;
     overflow-x: auto;
 }
 

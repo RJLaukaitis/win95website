@@ -16,15 +16,16 @@
 .ContactHeader{
     height: 25px;
     margin-left: 5px;
+    color: black;
+
 }
 .contact-content{
     font-family: Magicalnight;
     margin-left: 161px;
     width: calc(73% - 24px);
-    font-style: bold;
     overflow: hidden;
     background-color: white;
-    width: 57vw;
+    width: 70vw;
     height: 85vh;
     word-wrap: break-word;
     overflow-x: hidden;

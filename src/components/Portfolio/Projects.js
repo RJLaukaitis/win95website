@@ -13,7 +13,7 @@ const Projects = () => {
     const categories = [
         { name: "Software Projects",icon:softwareGif, path: "/software" },
         { name: "Renders",icon:blenderGif, path: "/blender" },
-        { name: "Unreal Engine 5", icon:loadingGif, path: "/unrealengine" }
+        { name: "More coming soon!", icon:loadingGif, path: "/projects" }
     ];
 
     const handleCategoryClick = (path) => {
