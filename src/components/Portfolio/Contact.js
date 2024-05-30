@@ -21,6 +21,8 @@ const Contact = () => {
         setFormData(prevState => ({ ...prevState, [name]: value }));
     };
 
+    
+
 
     var sentAudio = new Audio(sentsound);
     // Handle form submission

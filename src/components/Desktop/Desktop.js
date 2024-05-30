@@ -4,6 +4,7 @@ import Icon from "../Icons/Icon.js";
 import Draggable from 'react-draggable';
 import pcNoise from "../../Audio/Ambience.mp3";
 import clickNoise from "../../Audio/MouseClick.wav";
+import typeNoise from "../../Audio/Typing.mp3";
 import '98.css';
 import './Desktop.css'; // Ensure styles do not conflict with 98.css
 import 'react-resizable/css/styles.css'; // Import CSS for resizable component
@@ -23,11 +24,35 @@ function Desktop() {
             clickSound.play();
         };
 
+        var typesound = new Audio(typeNoise);
+        var startTime = 0;
+        var duration = 0.2;
+        
+        const playTypingSound = () => {
+            // Reset to start if startTime exceeds the audio duration
+            if (startTime + (duration+2) > typesound.duration) {
+                startTime = 0;
+            }
+        
+            typesound.currentTime = startTime;
+            typesound.volume = 0.1;
+            typesound.play();
+        
+            // Stop after the specified duration
+            setTimeout(() => {
+                typesound.pause();
+                typesound.currentTime = 0; // Reset to the start to avoid issues with pausing
+                startTime++; // Increment startTime for next key press
+            }, duration * 1000);
+        };
+
+        window.addEventListener('keypress', playTypingSound);
+
         // Play ambient sound
         const ambience = new Audio(pcNoise);
         ambience.loop = true;
         ambience.volume = 0.1;
-        ambience.play();
+        //ambience.play();
 
         window.addEventListener('mousedown', playClickSound);
 
