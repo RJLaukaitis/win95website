@@ -3,8 +3,9 @@ import Navigator from '../PortfolioNavigator/Navigator.js';
 import Icon from "../Icons/Icon.js";
 import Draggable from 'react-draggable';
 import pcNoise from "../../Audio/Ambience.mp3";
-import clickNoise from "../../Audio/MouseClick.wav";
 import typeNoise from "../../Audio/Typing.mp3";
+import MouseUp from "../../Audio/MouseUp.mp3";
+import MouseDown from "../../Audio/MouseDown.mp3";
 import '98.css';
 import './Desktop.css'; // Ensure styles do not conflict with 98.css
 import 'react-resizable/css/styles.css'; // Import CSS for resizable component
@@ -18,10 +19,16 @@ function Desktop() {
     const [isDragging, setIsDragging] = useState(false);
 
     useEffect(() => {
-        const playClickSound = () => {
-            var clickSound = new Audio(clickNoise);
-            clickSound.volume =0.15;
-            clickSound.play();
+        const playClickUPSound = () => {
+            var mouseUpsound = new Audio(MouseUp);
+            mouseUpsound.volume =0.15;
+            mouseUpsound.play();
+        };
+
+        const playClickDOWNSound = () => {
+            var MouseDownSound = new Audio(MouseDown);
+            MouseDownSound.volume =0.15;
+            MouseDownSound.play();
         };
 
         var typesound = new Audio(typeNoise);
@@ -54,10 +61,12 @@ function Desktop() {
         ambience.volume = 0.1;
         //ambience.play();
 
-        window.addEventListener('mousedown', playClickSound);
+        window.addEventListener('mousedown', playClickDOWNSound);
+        window.addEventListener('mouseup', playClickUPSound);
 
         return () => {
-            window.removeEventListener('mousedown', playClickSound);
+            window.removeEventListener('mousedown', playClickDOWNSound);
+            window.removeEventListener('mouseup', playClickUPSound);
         };
     }, []);
 
