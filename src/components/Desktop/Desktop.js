@@ -12,6 +12,7 @@ import 'react-resizable/css/styles.css'; // Import CSS for resizable component
 
 import PortfolioIcon from "../../images/DocumentIcon.png";
 import SolitaireIcon from "../../images/solitaireIcon.png";
+import { wait } from '@testing-library/user-event/dist/utils/index.js';
 
 function Desktop() {
     const [isSolitaireOpen, setIsSolitaireOpen] = useState(false);
@@ -22,6 +23,7 @@ function Desktop() {
         const playClickUPSound = () => {
             var mouseUpsound = new Audio(MouseUp);
             mouseUpsound.volume =0.15;
+            wait(1);
             mouseUpsound.play();
         };
 
@@ -31,25 +33,24 @@ function Desktop() {
             MouseDownSound.play();
         };
 
-        var typesound = new Audio(typeNoise);
-        var startTime = 0;
-        var duration = 0.2;
-        
+        const typesound = new Audio(typeNoise);
+        let typingTimeout;
+        const duration = 0.2; // duration of the typing sound in seconds
+        let startTime = 0;
+
         const playTypingSound = () => {
-            // Reset to start if startTime exceeds the audio duration
-            if (startTime + (duration+2) > typesound.duration) {
+            if (startTime + (duration + 1) > typesound.duration) {
                 startTime = 0;
             }
-        
             typesound.currentTime = startTime;
-            typesound.volume = 0.1;
+            typesound.volume=0.1;
             typesound.play();
-        
-            // Stop after the specified duration
-            setTimeout(() => {
+
+            clearTimeout(typingTimeout); // Clear any existing timeout
+            typingTimeout = setTimeout(() => {
                 typesound.pause();
-                typesound.currentTime = 0; // Reset to the start to avoid issues with pausing
-                startTime++; // Increment startTime for next key press
+                typesound.currentTime = 0;
+                startTime++;
             }, duration * 1000);
         };
 
@@ -59,7 +60,7 @@ function Desktop() {
         const ambience = new Audio(pcNoise);
         ambience.loop = true;
         ambience.volume = 0.1;
-        //ambience.play();
+        ambience.play();
 
         window.addEventListener('mousedown', playClickDOWNSound);
         window.addEventListener('mouseup', playClickUPSound);
