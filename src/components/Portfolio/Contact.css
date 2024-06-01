@@ -75,7 +75,8 @@
 .contact-form textarea {
     font-family: Millennium;
     width: 75%;
-    font-size: 12px;
+    height:75%;
+    font-size: large;
     margin-bottom: 15px;
     margin-left: 5px;
     padding-bottom: 5px;
