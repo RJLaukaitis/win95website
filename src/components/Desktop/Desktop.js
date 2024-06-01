@@ -60,7 +60,7 @@ function Desktop() {
         const ambience = new Audio(pcNoise);
         ambience.loop = true;
         ambience.volume = 0.1;
-        ambience.play();
+        //ambience.play();
 
         window.addEventListener('mousedown', playClickDOWNSound);
         window.addEventListener('mouseup', playClickUPSound);
@@ -100,7 +100,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    defaultPosition={{x: 300, y: 100}}
+                    defaultPosition={{x: 50, y: 25}}
                 >
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
                             <div className="title-bar">
@@ -112,7 +112,7 @@ function Desktop() {
                                 </div>
                             </div>
                             <div className="window-body">
-                                <iframe src="../../Solitaire/src/index.js" title="Solitaire" style={{ width: '50vw', height: '50vh', border: 'none' }}></iframe>
+                                <iframe src={`${process.env.PUBLIC_URL}/Solitaire/index.html`} title="Solitaire" style={{ width: '90vw', height: '85vh', border: 'none' }}></iframe>
                             </div>
                         </div>
                 </Draggable>
