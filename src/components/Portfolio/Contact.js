@@ -37,7 +37,7 @@ const Contact = () => {
             
         }, (error) => {
             console.log('Failed to send email.', error.text);
-            setEmailSent(false); // Optionally handle error state
+            setEmailSent(false);
         });
     };
 
