@@ -9,7 +9,6 @@
 
 
 .Page-Content{
-    font-family: Magicalnight;
     margin-left: 161px;
     width: calc(73% - 24px);
     font-style: bold;
@@ -79,7 +78,26 @@
 }
 
 .alchemyHome p{
-    padding-left: 166px;
+    padding-left: 75px;
+    font-family: MidnightBlack;
+    color: black;
+    font-style: oblique;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+.Media {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    gap: 10px;
+    width: 30vw;
+    height: auto;
+}
+
+.captions p{
+    padding-left: 80px;
     font-family: MidnightBlack;
     color: black;
     font-style: oblique;
