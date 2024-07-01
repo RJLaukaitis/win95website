@@ -30,8 +30,9 @@
 }
 
 .Alchemy h1{
+    font-family: Millennium;
     font-size: xx-large;
-    margin-left:5px;
+    margin-left:10px;
     height: 10px;
     color: black;
 
@@ -47,7 +48,41 @@
 .Alchemy p{
     font-family: Millennium;
     font-size: 16px;
+    word-wrap: break-word;
     margin-left: 10px;
     color: #414a4c;
     font-weight: 100;
+}
+
+.Alchemy h3{
+    font-family: Millennium;
+    font-size: 23px;
+    margin-left:10px;
+    height: 10px;
+    color: black;
+}
+
+.bulletedList{
+    font-family: Millennium;
+    font-size: 16px;
+    margin-left: 45px;
+    color: #414a4c;
+    font-weight: 100;
+}
+
+.alchemyHome img{
+    width: 25vw; 
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.alchemyHome p{
+    padding-left: 166px;
+    font-family: MidnightBlack;
+    color: black;
+    font-style: oblique;
+    font-size: 16px;
+    word-wrap: break-word;
 }
