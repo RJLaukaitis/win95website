@@ -33,7 +33,7 @@ const Experience = () => {
                 • Gained valuable customer service experience serving fast paced shifts with 30 team members.<br></br>
                 • Worked and managed the register, walked out orders to customers, made drinks and desserts.
                 <br></br>
-                • Effectively diffused difficult conversations surrounding customer complaints and made decisions to solve and maintain customer          satisfaction.
+                • Effectively diffused difficult conversations surrounding customer complaints and made decisions to solve and maintain customer  satisfaction.
                 <br></br>
                 </p>
                 </div>

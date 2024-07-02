@@ -6,8 +6,6 @@
     font-family: Millenium;
     src: url(../../Fonts/Millennium.ttf);
 }
-
-
 .Page-Content{
     font-family: Magicalnight;
     margin-left: 161px;
@@ -28,15 +26,12 @@
     margin-left: 5px;
     height: 100px;
 }
-
 .Willows h1{
     font-family: Millennium;
-
     font-size: xx-large;
     margin-left:5px;
     height: 10px;
     color: black;
-
 }
 .Willows h2{
     font-family: Millennium;
@@ -53,15 +48,12 @@
     color: #414a4c;
     font-weight: 100;
 }
-
 .Chickfila h1{
     font-family: Millennium;
-
     font-size: xx-large;
     margin-left:5px;
     height: 10px;
     color: black;
-
 }
 .Chickfila h2{
     font-family: Millennium;

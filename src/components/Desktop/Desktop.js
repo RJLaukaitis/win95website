@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navigator from '../PortfolioNavigator/Navigator.js';
 import Icon from "../Icons/Icon.js";
 import Card from "../BusinessCard/BusinessCard.js"
+import Credits from "../Credits/Credits.js"
 import Draggable from 'react-draggable';
 import pcNoise from "../../Audio/Ambience.mp3";
 import typeNoise from "../../Audio/Typing.mp3";
@@ -84,7 +85,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    defaultPosition={{x: 50, y: 25}}
+                    defaultPosition={{x: 50, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
                             <div className="title-bar">
@@ -128,7 +129,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    defaultPosition={{x: 50, y: 25}}
+                    defaultPosition={{x: 400, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
                             <div className="title-bar">
@@ -150,7 +151,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    defaultPosition={{x: 50, y: 25}}
+                    defaultPosition={{x: 200, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
                             <div className="title-bar">
@@ -162,7 +163,7 @@ function Desktop() {
                                 </div>
                             </div>
                             <div className="window-body">
-
+                            <Credits/>
                             </div>
                         </div>
                 </Draggable>
