@@ -97,10 +97,12 @@
 }
 
 .captions p{
+    display: flex;
+    flex-direction: row;
     padding-left: 80px;
+    gap: 320px;
     font-family: MidnightBlack;
     color: black;
     font-style: oblique;
     font-size: 16px;
-    word-wrap: break-word;
 }
