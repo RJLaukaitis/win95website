@@ -11,12 +11,15 @@ import './Desktop.css'; // Ensure styles do not conflict with 98.css
 import 'react-resizable/css/styles.css'; // Import CSS for resizable component
 
 import PortfolioIcon from "../../images/DocumentIcon.png";
+import creditsIcon from "../../images/credits.png"
 import SolitaireIcon from "../../images/solitaireIcon.png";
 import { wait } from '@testing-library/user-event/dist/utils/index.js';
+import { createDisabledTextStyles } from 'react95/dist/common/index.js';
 
 function Desktop() {
     const [isSolitaireOpen, setIsSolitaireOpen] = useState(false);
     const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
+    const [isCreditsOpen, setIsCreditsOpen] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
 
     useEffect(() => {
@@ -113,6 +116,28 @@ function Desktop() {
                             </div>
                             <div className="window-body">
                                 <iframe src={`${process.env.PUBLIC_URL}/Solitaire/index.html`} title="Solitaire" style={{ width: '90vw', height: '85vh', border: 'none' }}></iframe>
+                            </div>
+                        </div>
+                </Draggable>
+            )}
+        <Icon label="Credits" imgSrc={creditsIcon} onClick={() => setIsCreditsOpen(true)} />
+            {isPortfolioOpen && (
+                <Draggable handle=".title-bar"
+                    onStart={()=> setIsDragging(true)}
+                    onStop={()=> setIsDragging(false)}
+                    defaultPosition={{x: 50, y: 25}}
+                >       
+                        <div className={`window ${isDragging ? 'dragging' : ''}`}>
+                            <div className="title-bar">
+                                <div className="title-bar-text">Credits</div>
+                                <div className="title-bar-controls">
+                                    <button aria-label="Minimize" />
+                                    <button aria-label="Maximize" />
+                                    <button aria-label="Close" onClick={() => setIsCreditsOpen(false)} />
+                                </div>
+                            </div>
+                            <div className="window-body">
+                                
                             </div>
                         </div>
                 </Draggable>
