@@ -15,13 +15,13 @@
 }
 
 .home-header {
-    font-family: MagicalNight;
+    font-family: MidnightBlack;
     margin-bottom: 32px; /* Reduced margin for better space management */
     margin-top: 32px; /* Reduced margin for better space management */
 }
 
 .home-name {
-    font-family: MagicalNight;
+    font-family: MidnightBlack;
     font-size: 48px; /* Smaller size for better fitting */
     margin-bottom: 16px;
 }

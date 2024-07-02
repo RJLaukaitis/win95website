@@ -65,19 +65,18 @@ const Software = () => {
                         </div>
                 </div>
                 <hr class="solid"></hr> 
-
             </div>
-            <div className="Chickfila">
-            <h1>Chick-Fil-A</h1>
-                <h2>Team Member, December 2019 - April 2022</h2>
+
+            <div className="T-Recs">
+            <h1>T-Recs</h1>
+                <h2>June 2024 - August 2024</h2>
                 <p>
-                • Gained valuable customer service experience serving fast paced shifts with 30 team members.<br></br>
-                • Worked and managed the register, walked out orders to customers, made drinks and desserts.
-                <br></br>
-                • Effectively diffused difficult conversations surrounding customer complaints and made decisions to solve and maintain customer          satisfaction.
-                <br></br>
+                    T-recs is a web based app to help Lehigh faculty and admins track student integrity violations across departments. Faculty are able to securely log into the platform through their Lehigh email accounts, and submit a report form about the incident. I worked on this app with a few other students from the University, our professor, Mark Erle reached out to students for research opportunities and I jumped in as soon as i could. Our team of five splt up to work in the sections we had the most experience in. I developed most of the backend parts and created the methods for sending and receiving report objects to the postgres database.
                 </p>
+        
                 </div>
+            <hr class="solid"></hr> 
+
         </div>
     );
 };
