@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navigator from '../PortfolioNavigator/Navigator.js';
 import Icon from "../Icons/Icon.js";
+import Card from "../BusinessCard/BusinessCard.js"
 import Draggable from 'react-draggable';
 import pcNoise from "../../Audio/Ambience.mp3";
 import typeNoise from "../../Audio/Typing.mp3";
@@ -19,6 +20,7 @@ import { createDisabledTextStyles } from 'react95/dist/common/index.js';
 function Desktop() {
     const [isSolitaireOpen, setIsSolitaireOpen] = useState(false);
     const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
+    const [isCardOpen, setIsCardOpen] = useState(false);
     const [isCreditsOpen, setIsCreditsOpen] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
 
@@ -120,8 +122,30 @@ function Desktop() {
                         </div>
                 </Draggable>
             )}
+        <Icon label="Business Card" imgSrc={creditsIcon} onClick={() => setIsCardOpen(true)} />
+            {isCardOpen && (
+                <Draggable handle=".title-bar"
+                    onStart={()=> setIsDragging(true)}
+                    onStop={()=> setIsDragging(false)}
+                    defaultPosition={{x: 50, y: 25}}
+                >       
+                        <div className={`window ${isDragging ? 'dragging' : ''}`}>
+                            <div className="title-bar">
+                                <div className="title-bar-text">Credits</div>
+                                <div className="title-bar-controls">
+                                    <button aria-label="Minimize" />
+                                    <button aria-label="Maximize" />
+                                    <button aria-label="Close" onClick={() => setIsCardOpen(false)} />
+                                </div>
+                            </div>
+                            <div className="window-body">
+                                <Card/>
+                            </div>
+                        </div>
+                </Draggable>
+            )}
         <Icon label="Credits" imgSrc={creditsIcon} onClick={() => setIsCreditsOpen(true)} />
-            {isPortfolioOpen && (
+            {isCreditsOpen && (
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
@@ -137,7 +161,7 @@ function Desktop() {
                                 </div>
                             </div>
                             <div className="window-body">
-                                
+                            
                             </div>
                         </div>
                 </Draggable>
