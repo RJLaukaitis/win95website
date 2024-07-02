@@ -14,6 +14,7 @@ import 'react-resizable/css/styles.css'; // Import CSS for resizable component
 import PortfolioIcon from "../../images/DocumentIcon.png";
 import creditsIcon from "../../images/credits.png"
 import SolitaireIcon from "../../images/solitaireIcon.png";
+import cardIcon from "../../images/mailbox.png"
 import { wait } from '@testing-library/user-event/dist/utils/index.js';
 import { createDisabledTextStyles } from 'react95/dist/common/index.js';
 
@@ -122,7 +123,7 @@ function Desktop() {
                         </div>
                 </Draggable>
             )}
-        <Icon label="Business Card" imgSrc={creditsIcon} onClick={() => setIsCardOpen(true)} />
+        <Icon label="Card" imgSrc={cardIcon} onClick={() => setIsCardOpen(true)} />
             {isCardOpen && (
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
@@ -131,7 +132,7 @@ function Desktop() {
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
                             <div className="title-bar">
-                                <div className="title-bar-text">Credits</div>
+                                <div className="title-bar-text">Card</div>
                                 <div className="title-bar-controls">
                                     <button aria-label="Minimize" />
                                     <button aria-label="Maximize" />
@@ -161,7 +162,7 @@ function Desktop() {
                                 </div>
                             </div>
                             <div className="window-body">
-                            
+
                             </div>
                         </div>
                 </Draggable>
