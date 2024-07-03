@@ -15,6 +15,7 @@ import 'react-resizable/css/styles.css'; // Import CSS for resizable component
 import PortfolioIcon from "../../images/DocumentIcon.png";
 import creditsIcon from "../../images/credits.png"
 import SolitaireIcon from "../../images/solitaireIcon.png";
+import mineIcon from "../../images/minesweeper.png";
 import cardIcon from "../../images/mailbox.png"
 import { wait } from '@testing-library/user-event/dist/utils/index.js';
 import { createDisabledTextStyles } from 'react95/dist/common/index.js';
@@ -23,6 +24,7 @@ function Desktop() {
     const [isSolitaireOpen, setIsSolitaireOpen] = useState(false);
     const [isPortfolioOpen, setIsPortfolioOpen] = useState(true);
     const [isCardOpen, setIsCardOpen] = useState(false);
+    const [isMineOpen, setIsMineOpen] = useState(false);
     const [isCreditsOpen, setIsCreditsOpen] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
 
@@ -120,6 +122,28 @@ function Desktop() {
                             </div>
                             <div className="window-body">
                                 <iframe src={`${process.env.PUBLIC_URL}/Solitaire/index.html`} title="Solitaire" style={{ width: '90vw', height: '85vh', border: 'none' }}></iframe>
+                            </div>
+                        </div>
+                </Draggable>
+            )}
+        <Icon label="Mines" imgSrc={mineIcon} onClick={() => setIsMineOpen(true)} />
+            {isMineOpen && (
+                <Draggable handle=".title-bar"
+                    onStart={()=> setIsDragging(true)}
+                    onStop={()=> setIsDragging(false)}
+                    defaultPosition={{x: 500, y: 35}}
+                >
+                        <div className={`window ${isDragging ? 'dragging' : ''}`}>
+                            <div className="title-bar">
+                                <div className="title-bar-text">Minesweeper</div>
+                                <div className="title-bar-controls">
+                                    <button aria-label="Minimize" />
+                                    <button aria-label="Maximize" />
+                                    <button aria-label="Close" onClick={() => setIsMineOpen(false)} />
+                                </div>
+                            </div>
+                            <div className="window-body">
+                                <iframe src={`${process.env.PUBLIC_URL}/minesweeper/index.html`} title="Minesweeper" style={{ width: '30vw', height: '50vh', border: 'none' }}></iframe>
                             </div>
                         </div>
                 </Draggable>

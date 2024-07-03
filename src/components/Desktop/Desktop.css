@@ -104,7 +104,8 @@ html, body, #root {
     overflow-y: hidden;
     width: 100%;
     word-wrap: break-word;
-    height: 85vh;
+    /* height: 85vh;
+    min-height: 45vh; */
     overflow-x: auto;
 }
 

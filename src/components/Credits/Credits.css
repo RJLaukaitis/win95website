@@ -1,0 +1,58 @@
+.Credits-Content {
+    width: calc(73% - 24px);
+    font-style: bold;
+    overflow: hidden;
+    background-color: black;
+    width: 70vw;
+    height: 85vh;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.CreditsHeader h1 {
+    font-family: MidnightBlack;
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 10px; 
+    font-size:46px;
+    color: white;
+    text-shadow:
+    0 0 7px #fff;
+    padding-bottom: 0px;
+}
+
+.CreditsHeader h2 {
+    font-family: MidnightBlack;
+    font-size: 28px;
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 10px;
+    color: white;
+    text-shadow:
+    0 0 7px #fff;
+    padding-bottom: 0px;
+}
+
+.creditList {
+    font-family: MidnightBlack;
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 10px; 
+    font-size:18px;
+    color: white; 
+    text-shadow:
+    0 0 7px #fff;
+    padding-bottom: 0px;
+}
+
+.creditList p {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
