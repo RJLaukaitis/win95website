@@ -21,7 +21,7 @@ import { createDisabledTextStyles } from 'react95/dist/common/index.js';
 
 function Desktop() {
     const [isSolitaireOpen, setIsSolitaireOpen] = useState(false);
-    const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
+    const [isPortfolioOpen, setIsPortfolioOpen] = useState(true);
     const [isCardOpen, setIsCardOpen] = useState(false);
     const [isCreditsOpen, setIsCreditsOpen] = useState(false);
     const [isDragging, setIsDragging] = useState(false);

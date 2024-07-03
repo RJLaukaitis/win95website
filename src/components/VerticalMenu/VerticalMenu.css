@@ -3,7 +3,7 @@
   margin-left: 10px;
   width: 165px; /* Set a fixed width in pixels */
   min-width: 165px; /* Minimum width to prevent resizing smaller than desired */
-  min-height: 82vh; /* Set height relative to the viewport height */
+  min-height: 82.5vh; /* Set height relative to the viewport height */
   position: fixed; /* Keeps the menu at the specified position */
   left: 0;
   top: 0;
