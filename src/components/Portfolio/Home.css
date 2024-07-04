@@ -10,7 +10,7 @@
     text-align: center;
     overflow: auto; /* Ensures content is scrollable if it overflows */
     background-color: white;
-    width: 88vw;
+    width: 80vw;
     height: 85vh;
 }
 
