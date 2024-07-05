@@ -41,8 +41,7 @@
 }
 
 .about-me-title{
-    padding-left: 5px;
-    font-family: Millennium;
+    font-family: MidnightBlack;
     color: black;
     font-style: bold;
     margin: 0 12px;
@@ -65,7 +64,7 @@
 }
 
 .interest-title{
-    font-family: Millennium;
+    font-family: MidnightBlack;
     color: black;
     font-style: bold;
     margin: 0 0px;
@@ -99,12 +98,11 @@
 }
 
 .Work-image p{
-    padding-left: 166px;
+    margin-left: 330px;
     font-family: MidnightBlack;
     color: black;
     font-style: oblique;
     font-size: 16px;
-    margin: 0 12px;
     word-wrap: break-word;
 }
 

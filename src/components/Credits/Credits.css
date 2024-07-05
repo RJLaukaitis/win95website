@@ -17,8 +17,6 @@
     padding: 10px; 
     font-size:46px;
     color: white;
-    text-shadow:
-    0 0 7px #fff;
     padding-bottom: 0px;
 }
 
@@ -29,8 +27,6 @@
     text-align: center; 
     padding: 10px;
     color: white;
-    text-shadow:
-    0 0 7px #fff;
     padding-bottom: 0px;
 }
 
@@ -41,8 +37,7 @@
     padding: 10px; 
     font-size:18px;
     color: white; 
-    text-shadow:
-    0 0 7px #fff;
+
     padding-bottom: 0px;
 }
 

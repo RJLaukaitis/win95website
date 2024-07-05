@@ -28,6 +28,16 @@
     height: 70px;
 }
 
+.blenderHeader h1{
+    margin-top: 0px;
+    font-family: Millennium;
+    font-size: xx-large;
+    margin-left:10px;
+    margin-bottom: 35px;
+    height: 10px;
+    color: black;
+}
+
 .Text{
     padding-left: 5px;
     font-family: 'Millennium';

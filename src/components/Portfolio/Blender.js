@@ -17,6 +17,11 @@ const Blender = () => {
                     <h1>Renders</h1>
                 </div>
                 <hr class = "solid"></hr>
+                <div className="blenderHeader">
+                <h1>
+                    Blender
+                </h1>
+                </div>
                 <div className="Text">
                     <p>
                         Blender has quickly become one of my favorite pieces of software to use and experiment with. It is one of the best rendering tools available for beginners, and it allows me to exercise my creative side when I feel inspired.

@@ -23,7 +23,7 @@ const About = () => {
                     I'm currently a sophomore at Lehigh University working towards a dual bachelors of science degree in Computer Science & Business.
                 </p>
                 <p>
-                    Thank you for stopping by my portfolio. I built this page from the ground up in React, javaScript, and CSS. I used Henry Heffernan's 2022 portfolio as a reference while developing the site, his page can be found <a href="https://henryheffernan.com/">here</a>. Please enjoy.
+                    Thank you for stopping by. I built this page from the ground up in React,JavaScript,CSS and Three. The inspiration behind this site came from Henry Heffernan's 2022 portfolio, it can be found <a href="https://henryheffernan.com/">here</a>. I loved the blend of mixing 2D and 3D and thought it was super creative. Please enjoy.
                 </p>
             </div>
             <Resume/>
@@ -33,7 +33,7 @@ const About = () => {
             </div>
             <div className="about-me-paragraph">
                 <p>
-                    In 2003, I was born in Kirkland, Washington. Kirkland is where I've grown up and still call home to this day. From a young age, my passion for technology and creativity has been a defining aspect of my life. I would spend countless hours fiddling around with our old iMac, attempting to branch out into coding, game development, and graphic design (of course not knowing how intricate those professions all were). 
+                    In 2003, I was born in Kirkland, Washington. Kirkland is where I've grown up and still call home to this day. From a young age, my passion for technology and creativity has been a defining aspect of my life. I would spend countless hours playing around with our old iMac, attempting to branch out into coding, game development, and graphic design (of course not knowing how intricate those endeavors all were). 
                 </p>
                 <div className="Work-image">
                 <img src = {WorkImage} alt="" />
@@ -61,20 +61,20 @@ const About = () => {
                 </p>
             </div>
                 <div className="ME-image">
-                <img src = {MEImage} alt="" />
+    
                 </div>
                 <div className="interest-paragraph-2">
                     <p>
-                        On the more technical side of things, I've been learning Blender to create 3d scenes and renders (How I created this office space!). Blender is great for me to explore my creative side and I'm always proud of the results I achieve. You can see a more detailed view of my work over on the projects page.
+                        On the more technical side of things, I've been learning Blender to create 3d scenes and renders (How I created this office space). Blender is great for me to explore my creative side and I'm always proud of the results I achieve. You can see a more detailed view of my work over on the projects page.
                     </p>
                 </div>
             </div>
             <div className="about-me-paragraph-4">
                 <p>
-                    Thank you for taking the time to read about myself! I hope you found this short glimpse into my life interesting and I look forward to possibly connecting and sharing more about my passions and interests. Have fun looking through the site and let me know if you have any feedback!
+                    Thank you for taking time to read about myself! I hope you find the website interesting and I look forward to possibly connecting and sharing more about my passions and interests. Have fun looking through the site and let me know if you have any feedback!
                 </p>
                 <p2>
-                    Figure 2: My 2024 composite photo
+
                 </p2>
             </div>
             </div>

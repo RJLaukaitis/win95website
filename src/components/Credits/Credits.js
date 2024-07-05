@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import pingsfx from '../../Audio/Pingsound.mp3';
 import './Credits.css';
-
 
 const credits = [
     { role: 'Programming', name: 'Ronald Laukaitis' },
-    { role: 'Modeling,Texturing,UVs,', name: 'Ronald Laukaitis' },
+    { role: 'Monitor Model', name: 'Ronald Laukaitis' },
     { role: 'Environment Models', name: 'Sean Nicolas' },
     { role: 'Ambient PC sfx', name: 'Kyle Seeley' },
     { role: 'Windows Icons', name: 'Microsoft' },
     { role: 'Office Ambience', name: 'Sounds Recorded' },
+    { role: 'Solitaire and Minesweeper', name: 'Isaiah Odhner' },
+    { role: 'Office Ambience', name: 'Sounds Recorded' },
+    { role: 'Business Card', name: 'Pierce&Pierce' },
     { role: 'Inspiration/Reference', name: 'Henry Heffernan' },
     // Add more credits as needed
 ];
 
 const Credits = () => {
+    useEffect(() => {
+        var audio = new Audio(pingsfx);
+        audio.volume =.5
+
+        credits.forEach((credit, index) => {
+            setTimeout(() => {
+                audio.play();
+            }, index * 500); // Match this delay with the animation delay
+        });
+    }, []);
+
     return (
         <div className="Credits-Content">
             <div className="CreditsHeader">
@@ -37,4 +51,3 @@ const Credits = () => {
 };
 
 export default Credits;
-

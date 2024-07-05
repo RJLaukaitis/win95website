@@ -42,25 +42,25 @@ const Software = () => {
                             </p>
                         </div>
                         <p>
-                        I built Alchemy in June of 2024, after solana memecoins started taking over my twitter feed. Noticing the lucrative opportunity some of these coins could offer, I started planning out what tools would be most useful for being on the winning side of trades. It took a lot of research and experimentation with different API's and services, however, I was able to develop a system that could reliably monitor and evaluate coins in real time. The result was a robust and reliable trading bot that allows users to capitalize on emerging trends in the cryptocurrency market.
+                        I built Alchemy in June of 2024, after solana memecoins started taking over my twitter feed. Noticing the lucrative opportunity some of these coins could offer, I started planning out what tools would be most useful for ending up on the winning side of trades. It took a lot of research and experimentation with different API's and services, however, I was able to develop a system that could reliably monitor and evaluate coins in real time. The result was a robust and reliable trading bot that allows users to capitalize on emerging trends in the cryptocurrency market.
                         </p>
                         <p>
-                        The github repo is not public to avoid plagiarism, however if you wish to see the source code please feel free to contact me.
+                        The github repo is not public to avoid my code being used elsewhere, however if you wish to see parts of source code please feel free to contact me.
                         </p>
                         <div className="features">
                             <h3> Features:</h3>
                             <div className="bulletedList">
                             <p>
-                                • Multi user and channel monitoring for Telegram and Twitter
+                                • Multi channel and user monitoring for Telegram and Twitter
                             </p>
                             <p>
                                 • Advanced algorithm to screen newly created coins and alert once one passes criteria
                             </p>
                             <p>
-                                • Auto buy once a coin is detected on monitored channels
+                                • Full RPC integration and customization
                             </p>
                             <p>
-                                • Auto sell  a percentage of coin holdings after a set time limit
+                            • Auto buy and sell once a coin is detected on monitored channels
                             </p>
                         </div>
                 </div>
@@ -71,7 +71,7 @@ const Software = () => {
             <h1>T-Recs</h1>
                 <h2>June 2024 - August 2024</h2>
                 <p>
-                    T-recs is a web based app to help Lehigh faculty and admins track student integrity violations across departments. Faculty are able to securely log into the platform through their Lehigh email accounts, and submit a report form about the incident. I worked on this app with a few other students from the University, our professor, Mark Erle reached out to students for research opportunities and I jumped in as soon as i could. Our team of five splt up to work in the sections we had the most experience in. I developed most of the backend parts and created the methods for sending and receiving report objects to the postgres database.
+                    T-recs is a web based app to help Lehigh faculty and admins track student integrity violations across departments. Faculty are able to securely log into the platform through their Lehigh email accounts, and submit a report form about the incident. I worked on this app with a few other students from the University, our professor, Mark Erle reached out to students for summer research opportunities and I jumped in as soon as i could. Our team of five split-up to work in the sections we had the most experience in. I started working on the backend components, and as of writing, the project is on-going.
                 </p>
         
                 </div>

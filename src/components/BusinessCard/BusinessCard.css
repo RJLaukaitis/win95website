@@ -1,7 +1,7 @@
 .page-container {
     font-style: bold;
     overflow: hidden;
-    width: 60vw;
+    width: 70vw;
     background-color: white;
     height: 85vh;
     word-wrap: break-word;
@@ -26,8 +26,8 @@
   }
   
   .card {
-    margin-left:150px;
-    margin-top: 80px;
+    margin-left:270px;
+    margin-top: 110px;
     width: 520px;
     height: 520px;
     height: auto;

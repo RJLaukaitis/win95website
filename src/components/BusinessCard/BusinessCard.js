@@ -1,6 +1,6 @@
 import React from 'react';
 import './BusinessCard.css'; // Make sure the CSS file is imported
-import frontCard from "../../images/FrontCard.png"
+import frontCard from "../../images/FrontCard2.png"
 import backCard from "../../images/BackCard.png"
 
 const BusinessCard = () => {
