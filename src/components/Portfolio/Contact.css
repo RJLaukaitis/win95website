@@ -25,6 +25,7 @@
     width: calc(73% - 24px);
     overflow: hidden;
     background-color: white;
+    color:black;
     width: 70vw;
     height: 85vh;
     word-wrap: break-word;
