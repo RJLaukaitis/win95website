@@ -17,6 +17,7 @@
     height: 25px;
     margin-left: 5px;
     color: black;
+    margin-top: 0pc;;
 
 }
 .contact-content{
@@ -48,10 +49,13 @@
 }
 
 .socials img{
-    width: 80px;
+    width: 35px;
     height:auto;
-    margin-bottom: 0px;
+    margin-left:10px;
+    border-style: outset;
+    border-color: #c0c0c0b8;
 }
+
 
 .PersonalEmail{
     font-size: medium;
