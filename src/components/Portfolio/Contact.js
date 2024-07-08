@@ -4,6 +4,8 @@ import VerticalMenu from "../VerticalMenu/verticalmenu";
 import emailjs from 'emailjs-com';
 import Resume from "../Resume/Resume.js"
 import sentsound from "../../Audio/sentsound.mp3";
+import ghLogo from "../../images/ghlogo.png";
+import inlogo from "../../images/linkedIn.png"
 
 const Contact = () => {
     // State hooks to keep track of input values and submission status
@@ -45,6 +47,10 @@ const Contact = () => {
         <div className="contact-container">
             <VerticalMenu/>
             <div className="contact-content">
+                <div className="socials">
+                    <img src = {ghLogo}/>
+                    <img src = {inlogo}/>
+                </div>
                 <h1 className="ContactHeader">
                     Contact
                 </h1>

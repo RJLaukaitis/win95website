@@ -47,6 +47,12 @@
     width: 17%;
 }
 
+.socials img{
+    width: 80px;
+    height:auto;
+    margin-bottom: 0px;
+}
+
 .PersonalEmail{
     font-size: medium;
     padding-top: 10px;
