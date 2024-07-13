@@ -8,8 +8,6 @@ import Contact from "../Portfolio/Contact";
 import Experience from "../Portfolio/Experience";
 import Blender from "../Portfolio/Blender";
 import Software from "../Portfolio/Software";
-import Shutdown from "../Shutdown/Shutdown";
-import Startup from "../Startup/Startup";
 
 function Navigator(){
     return (

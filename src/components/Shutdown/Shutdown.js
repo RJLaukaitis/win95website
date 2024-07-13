@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
+import { wait } from '@testing-library/user-event/dist/utils/index.js';
 
-const Shutdown = () => {
+
+function Shutdown() {
     return (
         <div className="Shutdown-layout">
             <h1>ERROR</h1>
 
             <p>
-                A problem has been detected and operation system has been shut down to prevent damage
+                A problem has been detected and the operating system has been shut down to prevent damage
                 to your computer.
             </p>
             <p>
@@ -15,7 +17,6 @@ const Shutdown = () => {
             <p>
                 SYSTEM_THREAD_EXCEPTION_NOT_HANDLED
             </p>
-
 
             <p>
                 Technical Information:
@@ -26,36 +27,31 @@ const Shutdown = () => {
             </p>
             <p>
                 *** 0xfffff80002e55151 base at 0xfffff80002e0d000 DateStamp 0x4ce7951a C0D3: RMCR3l0ADRLY
-
             </p>
             <p>
                 If this is the first time you've seen this stop error screen,
                 restart your computer. If this screen appears again, follow these steps:
             </p>
-            <p>
-                <ul>
-                    <li>Check to make sure any new hardware or software is properly installed.</li>
-                    <li>If this is a new installation, ask your hardware or software manufacturer
-                        for any os updates you might need.</li>
-                    <li>If problems continue, disable or remove any newly installed hardware
-                        or software. Disable BIOS memory options such as caching or shadowing.</li>
-                    <li>If you need to use safe mode to remove or disable components, restart
-                        your computer, press F8 to select Advanced Startup Options, and then
-                        select Safe Mode.</li>
-                    <li>
-                        Press CTRL+ALT+DEL to restart your computer.
-                        You will lose unsaved information in any programs that are running.
-                    </li>
-                </ul>
-            </p>
-
+            <ul>
+                <li>Check to make sure any new hardware or software is properly installed.</li>
+                <li>If this is a new installation, ask your hardware or software manufacturer
+                    for any OS updates you might need.</li>
+                <li>If problems continue, disable or remove any newly installed hardware
+                    or software. Disable BIOS memory options such as caching or shadowing.</li>
+                <li>If you need to use safe mode to remove or disable components, restart
+                    your computer, press F8 to select Advanced Startup Options, and then
+                    select Safe Mode.</li>
+                <li>
+                    Press CTRL+ALT+DEL to restart your computer.
+                    You will lose unsaved information in any programs that are running.
+                </li>
+            </ul>
 
             <p>
-                Rebooting. <blink>_</blink>
+                Rebooting. <span className="blink">_</span>
             </p>
         </div>
-        //have this navigate to boot sequence animation.
     );
-};
+}
 
-export default Shutdown
+export default Shutdown;

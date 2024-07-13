@@ -1,14 +1,12 @@
 import React from 'react';
 import './StartMenu.css';
 import ShutDownIcon from "../../images/ShutDownIcon.png";
-import { Navigate, useNavigate } from 'react-router-dom';
 
 function StartMenu() {
-    const navigate = useNavigate();
 
     const handleShutdown = () => {
-        navigate('/shutdown')
     };
+
 
     return (
         <div className="start-menu">
@@ -24,7 +22,6 @@ function StartMenu() {
                     Shutdown
                 </span>
             </div>
-            {/* Add other menu items here */}
         </div>
     );
 }
