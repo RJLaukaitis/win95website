@@ -1,13 +1,8 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import VerticalMenu from "../VerticalMenu/verticalmenu";
 
 const Home = () => {
-    const navigate = useNavigate();
-
-    const handleContactClick= () => navigate('/contact');
 
     return (
             <div className="home-container">
