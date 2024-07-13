@@ -1,15 +1,13 @@
 import React from 'react';
 import './StartMenu.css';
-import Icon from '../Icons/Icon.js';
 import ShutDownIcon from "../../images/ShutDownIcon.png";
-import errorSound from "../../Audio/Error.mp3"; // Adjust the path as necessary
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function StartMenu() {
-    const error = new Audio(errorSound);
+    const navigate = useNavigate();
 
     const handleShutdown = () => {
-        error.play();
-        // Add additional shutdown logic here
+        navigate('/shutdown')
     };
 
     return (

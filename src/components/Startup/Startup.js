@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Startup = () => {
+  const infoRef = useRef(null);
     useEffect(() => {
         const mainSystemInfo = [
           "System information",
@@ -44,9 +45,6 @@ const Startup = () => {
             displayInfo(moreMessages, 1000,resolve);
           });
           displayInfo(additionalMessages, 800, () => {
-            if (modelLoaded){
-              setShowModal(true);
-            }
           });
         };
     
