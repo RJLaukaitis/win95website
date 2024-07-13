@@ -8,7 +8,6 @@ import pcNoise from "../../Audio/Ambience.mp3";
 import typeNoise from "../../Audio/Typing.mp3";
 import MouseUp from "../../Audio/MouseUp.mp3";
 import MouseDown from "../../Audio/MouseDown.mp3";
-import '98.css';
 import './Desktop.css'; // Ensure styles do not conflict with 98.css
 import 'react-resizable/css/styles.css'; // Import CSS for resizable component
 
