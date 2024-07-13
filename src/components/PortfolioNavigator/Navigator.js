@@ -8,6 +8,8 @@ import Contact from "../Portfolio/Contact";
 import Experience from "../Portfolio/Experience";
 import Blender from "../Portfolio/Blender";
 import Software from "../Portfolio/Software";
+import Shutdown from "../Shutdown/Shutdown";
+import Startup from "../Startup/Startup";
 
 function Navigator(){
     return (
@@ -21,6 +23,8 @@ function Navigator(){
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/blender" element={<Blender />} />
                 <Route path="/software" element={<Software />} />
+                <Route path="/shutdown" element={<Shutdown />} />
+                <Route path="/startup" element={<Startup />} />
             </Routes>
         </Router>
     );

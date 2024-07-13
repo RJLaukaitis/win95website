@@ -1,12 +1,10 @@
 import React from 'react';
 import './StartMenu.css';
 import ShutDownIcon from "../../images/ShutDownIcon.png";
+import Wrapper from '../PortfolioNavigator/Wrapper';
 
-function StartMenu() {
 
-    const handleShutdown = () => {
-    };
-
+const StartMenu = ({ onShutdown }) => {
 
     return (
         <div className="start-menu">
@@ -16,7 +14,7 @@ function StartMenu() {
             <div className="OS-text">
                 OS
             </div>
-            <div className="shutdownIcon" onClick={handleShutdown}>
+            <div className="shutdownIcon" onClick={onShutdown}>
                 <img src={ShutDownIcon} alt='Shutdown'/>
                 <span className='Shutdown-text'>
                     Shutdown

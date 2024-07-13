@@ -6,7 +6,7 @@ import '../StartMenu/StartMenu.css'
 import WindowsLogo from '../../images/Windows_logo.png';
 import StartMenu from "../StartMenu/StartMenu";
 
-function Taskbar() {
+const Taskbar = ({ onShutdown }) => {
     // State to hold the current time
     const [currentTime, setCurrentTime] = useState(new Date());
   
@@ -40,7 +40,7 @@ function Taskbar() {
             {timeString}
           </div>
         </div>
-        {startMenuVisible && <StartMenu />}
+        {startMenuVisible && <StartMenu  onShutdown={onShutdown}/>}
       </div>
     );
   }
