@@ -1,8 +1,9 @@
 
 import React, {useState, useEffect} from "react";
 import './Taskbar.css';
-import '../StartMenu/StartMenu'
-import '../StartMenu/StartMenu.css'
+import '../StartMenu/StartMenu';
+import '98.css';
+import '../StartMenu/StartMenu.css';
 import WindowsLogo from '../../images/Windows_logo.png';
 import StartMenu from "../StartMenu/StartMenu";
 

@@ -5,7 +5,7 @@ const Startup = () => {
   const infoRef = useRef(null);
 
   useEffect(() => {
-    const mainSystemInfo = [
+    const messages = [
       "System information",
       "Uptime: 183960 hours",
       "CPU Usage: 23%",
@@ -15,44 +15,25 @@ const Startup = () => {
       "GPU Usage: 15%",
       "System Load: 1.2",
       "Kernel Version: 5.4.0-42-generic",
-    ];
-
-    const additionalMessages = [
-      "Spinning drives...",
-      "Turning on computer...",
-      "Initializing network...",
-      "Bootstrapping system...",
-    ];
-
-    const moreMessages = [
       "Cleaning up...",
       "Starting services...",
       "Entering Desktop",
+      "Spinning drives...",
+      "Turning on computer...",
+      "Initializing network...",
+      "Bootstrapping system..."
     ];
 
-    const displayInfo = (messages, delay) => {
-      return new Promise(resolve => {
-        messages.forEach((info, index) => {
-          setTimeout(() => {
-            if (infoRef.current) {
-              infoRef.current.innerText += `${info}\n`;
-            }
-            if (index === messages.length - 1) {
-              resolve();
-            }
-          }, index * delay);
-        });
-      });
-    };
-
     const displayMessages = async () => {
-      await displayInfo(mainSystemInfo, 200);
-      await displayInfo(moreMessages, 1000);
-      await displayInfo(additionalMessages, 800);
+      for (let i = 0; i < messages.length; i++) {
+        await new Promise(resolve => setTimeout(resolve, i < 9 ? 200 : 1000));
+        if (infoRef.current) {
+          infoRef.current.innerText += `${messages[i]}\n`;
+        }
+      }
     };
 
     displayMessages();
-
   }, []);
 
   return (

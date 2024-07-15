@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "../Portfolio/Home";
 import About from "../Portfolio/About";
-import '98.css';
 import Projects from "../Portfolio/Projects";
 import Contact from "../Portfolio/Contact";
 import Experience from "../Portfolio/Experience";

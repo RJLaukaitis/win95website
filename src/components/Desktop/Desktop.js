@@ -10,6 +10,7 @@ import MouseUp from "../../Audio/MouseUp.mp3";
 import MouseDown from "../../Audio/MouseDown.mp3";
 import './Desktop.css'; // Ensure styles do not conflict with 98.css
 import 'react-resizable/css/styles.css'; // Import CSS for resizable component
+import '98.css';
 
 import PortfolioIcon from "../../images/DocumentIcon.png";
 import creditsIcon from "../../images/credits.png"
@@ -17,7 +18,6 @@ import SolitaireIcon from "../../images/solitaireIcon.png";
 import mineIcon from "../../images/minesweeper.png";
 import cardIcon from "../../images/mailbox.png"
 import { wait } from '@testing-library/user-event/dist/utils/index.js';
-import { createDisabledTextStyles } from 'react95/dist/common/index.js';
 
 function Desktop() {
     const [isSolitaireOpen, setIsSolitaireOpen] = useState(false);

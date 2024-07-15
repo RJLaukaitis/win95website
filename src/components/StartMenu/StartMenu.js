@@ -1,5 +1,6 @@
 import React from 'react';
 import './StartMenu.css';
+import '98.css';
 import ShutDownIcon from "../../images/ShutDownIcon.png";
 import Wrapper from '../PortfolioNavigator/Wrapper';
 
