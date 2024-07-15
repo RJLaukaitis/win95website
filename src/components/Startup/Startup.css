@@ -1,4 +1,39 @@
+
 .splash-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
   background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
 }
 
+.header {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.logo {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.ascii-art {
+  white-space: pre; /* Preserve formatting */
+}
+
+.system-info {
+  text-align: left;
+  white-space: pre-wrap;
+  font-size: 12px;
+}
+
+.tasks {
+  margin-top: 10px;
+}

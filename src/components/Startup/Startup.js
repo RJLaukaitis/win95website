@@ -28,7 +28,7 @@ const Startup = () => {
       for (let i = 0; i < messages.length; i++) {
         await new Promise(resolve => setTimeout(resolve, i < 9 ? 200 : 1000));
         if (infoRef.current) {
-          infoRef.current.innerText += `${messages[i]}\n`;
+          infoRef.current.innerHTML += `${messages[i]}<br/>`;
         }
       }
     };
@@ -43,8 +43,7 @@ const Startup = () => {
         <p>(C) Laukaitis Corporation. All rights reserved.</p>
       </div>
       <div className="logo">
-        <p>
-
+        <div className="ascii-art">
           {`
        __                __         _ __  _      ____  _____
       / /   ____ ___  __/ /______ _(_) /_(_)____/ __ \\/ ___/
@@ -52,9 +51,8 @@ const Startup = () => {
     / /___/ /_/ / /_/ / ,  / /_/ / / /_/ (__  ) /_/ /___/ / 
     \\____/\\__,_/\\__,_/_/|_|\\__,_/_/\\__/_/____/\\____//____/  
                                                              
-        `}
-          
-          </p>
+          `}
+        </div>
       </div>
       <div className="system-info">
         <div ref={infoRef} className="tasks"></div>
