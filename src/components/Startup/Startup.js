@@ -6,7 +6,7 @@ const Startup = () => {
 
   useEffect(() => {
     const messages = [
-      "System information",
+      "---System information---",
       "Uptime: 183960 hours",
       "CPU Usage: 23%",
       "Memory Usage: 23%",
@@ -17,23 +17,26 @@ const Startup = () => {
       "Kernel Version: 5.4.0-42-generic",
       "Cleaning up...",
       "Starting services...",
-      "Entering Desktop",
-      "Spinning drives...",
-      "Turning on computer...",
+      "Bootstrapping system...",
       "Initializing network...",
-      "Bootstrapping system..."
+      "Cleaning up..."
     ];
+    let isMounted = true;  // Add this to track the component mount status
 
     const displayMessages = async () => {
       for (let i = 0; i < messages.length; i++) {
         await new Promise(resolve => setTimeout(resolve, i < 9 ? 200 : 1000));
-        if (infoRef.current) {
+        if (isMounted && infoRef.current) {
           infoRef.current.innerHTML += `${messages[i]}<br/>`;
         }
       }
     };
 
     displayMessages();
+
+    return () => {
+      isMounted = false;  // Cleanup to prevent state updates if the component unmounts
+    };
   }, []);
 
   return (
