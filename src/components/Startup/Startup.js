@@ -38,12 +38,14 @@ const Startup = () => {
 
   return (
     <div className="splash-screen">
-      <pre className="header">
+      <div className="header">
         <p>Laukaitis OS [Version 2.5.4]</p>
         <p>(C) Laukaitis Corporation. All rights reserved.</p>
-      </pre>
-      <pre className="logo">
-        {`
+      </div>
+      <div className="logo">
+        <p>
+
+          {`
        __                __         _ __  _      ____  _____
       / /   ____ ___  __/ /______ _(_) /_(_)____/ __ \\/ ___/
      / /   / __ \`/ / / / //_/ __ \`/ / __/ / ___/ / / /\\__ \\ 
@@ -51,9 +53,11 @@ const Startup = () => {
     \\____/\\__,_/\\__,_/_/|_|\\__,_/_/\\__/_/____/\\____//____/  
                                                              
         `}
-      </pre>
+          
+          </p>
+      </div>
       <div className="system-info">
-        <pre ref={infoRef} className="tasks"></pre>
+        <div ref={infoRef} className="tasks"></div>
       </div>
     </div>
   );
