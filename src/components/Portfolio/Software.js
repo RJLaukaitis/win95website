@@ -19,6 +19,23 @@ const Software = () => {
             <div className="introduction">
                 Here is a list of the software projects I've worked on.
             </div>
+
+            <hr class="solid"></hr> 
+            <div className="website">
+                <h1>RonaldLaukaitis.com </h1>
+                <h2>April-August 2024</h2>
+                        <p>
+                        I always wanted to create my own personal portfolio website and I became inspired after seeing Henry Heffernan's 2022 showcase. I decided to follow his same framework and started working on the windowsOS portion in April of 2024. This was my first time delving into JS and CSS so it took some time getting adjusted however I picked it up pretty quick and was able to create the desktop page in a single sitting. Once I had this framework in place I started working on the actual portfolio page and chipped away at it during the rest of my school year.
+                        </p>
+                        <p>
+                            The 3d portion of the website was created using THREEjs and blender. Blender was very intuitive to model the office portion of the scene, it also allowed me to bake all the textures with the blender lighting so I wouldn't have to rely on the THREEjs lighting system. Using baked textures gave everything a realistic look which couldn't have been achieved elsewhere.
+                        </p>
+                
+                        <p>
+                        </p>
+                <hr class="solid"></hr> 
+            </div>
+
             <hr class="solid"></hr> 
             <div className="Alchemy">
                 <h1>alchemy </h1>
