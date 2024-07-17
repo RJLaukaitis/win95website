@@ -45,7 +45,7 @@
     align-items: center; /* This will vertically center the contents */
     justify-content: flex-start; /* This will align the contents to the start of the box */
     padding: 16px;
-    margin-left:150px;
+    margin-left:200px;
     width: 500px; /* Adjust width as necessary */
     margin-bottom: 10px;
     height: 75px; /* Adjust height as necessary */

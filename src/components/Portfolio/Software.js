@@ -32,8 +32,11 @@ const Software = () => {
                         </p>
                 
                         <p>
+                            
+
+
+
                         </p>
-                <hr class="solid"></hr> 
             </div>
 
             <hr class="solid"></hr> 
