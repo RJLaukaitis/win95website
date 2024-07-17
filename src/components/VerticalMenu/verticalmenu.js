@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './VerticalMenu.css';
 
 function VerticalMenu() {
   const activeStyle = { color: 'red' }; // Style object for the active state
+  const [isSubMenuVisible, setIsSubMenuVisible] = useState(false); // State for submenu visibility
 
+  const toggleSubMenu = () => {
+    setIsSubMenuVisible(!isSubMenuVisible);
+  };
 
   return (
     <div className="vertical-menu">
@@ -17,9 +21,19 @@ function VerticalMenu() {
       <NavLink to="/experience" activeStyle={activeStyle} className="menu-item">
         <span className="star">*</span> Experience
       </NavLink>
-      <NavLink to="/projects" activeStyle={activeStyle} className="menu-item">
+      <div className="menu-item" onClick={toggleSubMenu}>
         <span className="star">*</span> Projects
-      </NavLink>
+      </div>
+      {isSubMenuVisible && (
+        <div className="submenu">
+          <NavLink to="/blender" activeStyle={activeStyle} className="submenu-item">
+          <span className="star">*</span> Software
+          </NavLink>
+          <NavLink to="/software" activeStyle={activeStyle} className="submenu-item">
+          <span className="star">*</span> Renders
+          </NavLink>
+        </div>
+      )}
       <NavLink to="/contact" activeStyle={activeStyle} className="menu-item">
         <span className="star">*</span> Contact
       </NavLink>
