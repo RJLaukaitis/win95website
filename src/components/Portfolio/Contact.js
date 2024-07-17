@@ -47,15 +47,17 @@ const Contact = () => {
         <div className="contact-container">
             <VerticalMenu/>
             <div className="contact-content">
-                <h1 className="ContactHeader">
-                    Contact
-                </h1>
-                <div className="socials">
-                    <a href="https://github.com/RJLaukaitis"target="_blank" rel="noopener noreferrer">
-                    <img src = {ghLogo}/></a>
+                <div className="headingContainer">
+                    <h1 className="ContactHeader">
+                        Contact
+                    </h1>
+                    <div className="socials">
+                        <a href="https://github.com/RJLaukaitis"target="_blank" rel="noopener noreferrer">
+                        <img src = {ghLogo}/></a>
 
-                    <a href="https://www.linkedin.com/in/rj-laukaitis/"target="_blank" rel="noopener noreferrer">
-                    <img src = {inlogo}/></a>
+                        <a href="https://www.linkedin.com/in/rj-laukaitis/"target="_blank" rel="noopener noreferrer">
+                        <img src = {inlogo}/></a>
+                    </div>
                 </div>
                 <p className="introduction">
                 Please feel free to reach out using the form below - All inquiries are forwarded to my personal email address. You can also use my personal email address below if you'd like to send it through a web/desktop email client.
