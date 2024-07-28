@@ -98,9 +98,9 @@
 .contact-form input,
 .contact-form textarea {
     font-family: Millennium;
-    width: 75%;
+    width: 62.5%;
     height:75%;
-    font-size: large;
+    font-size: 14px;
     margin-bottom: 15px;
     margin-left: 5px;
     padding-bottom: 5px;
