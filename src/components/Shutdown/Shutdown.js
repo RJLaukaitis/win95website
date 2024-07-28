@@ -52,7 +52,7 @@ const ShutdownPage = () => {
         </li>
       </ul>
       <p>
-        Rebooting. <span className={styles.blink}>_</span>
+        Rebooting in 10 seconds. <span className={styles.blink}>_</span>
       </p>
     </div>
   );

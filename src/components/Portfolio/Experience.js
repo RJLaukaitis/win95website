@@ -1,6 +1,4 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import './Experience.css';
 import VerticalMenu from '../VerticalMenu/verticalmenu';
 
@@ -8,6 +6,7 @@ const Experience = () => {
     return (
         <div className="Page-Content">
             <VerticalMenu/>
+            <div className="Experience-content">
             <div className="ExperienceHeader">
                 <h1>
                     Experience
@@ -37,6 +36,8 @@ const Experience = () => {
                 <br></br>
                 </p>
                 </div>
+        </div>
+
         </div>
     );
 };

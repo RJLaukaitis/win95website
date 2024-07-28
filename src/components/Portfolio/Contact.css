@@ -33,7 +33,7 @@
     overflow: hidden;
     background-color: white;
     color:black;
-    width: 70vw;
+    width: 79vw;
     height: 85vh;
     word-wrap: break-word;
     overflow-x: hidden;
@@ -57,7 +57,7 @@
 
 .socials {
     display:flex;
-    margin-left: 40vw;
+    margin-left: 50vw;
 }
 
 .socials img{

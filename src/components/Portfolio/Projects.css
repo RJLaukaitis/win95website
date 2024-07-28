@@ -10,10 +10,9 @@
 
 .Projects-content{
     margin-left: 160px;
-    width: calc(73% - 24px);
     font-style: bold;
     background-color: white;
-    width: 70vw;
+    width: 79vw;
     height: 85vh;
     word-wrap: break-word;
     overflow-x: hidden;

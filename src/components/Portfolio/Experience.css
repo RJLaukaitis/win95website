@@ -6,14 +6,13 @@
     font-family: Millenium;
     src: url(../../Fonts/Millennium.ttf);
 }
-.Page-Content{
+.Experience-Content{
     font-family: Magicalnight;
     margin-left: 161px;
-    width: calc(73% - 24px);
     font-style: bold;
     overflow: hidden;
     background-color: white;
-    width: 70vw;
+    width: 90vw;
     height: 85vh;
     word-wrap: break-word;
     overflow-x: hidden;
