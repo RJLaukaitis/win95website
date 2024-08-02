@@ -6,8 +6,8 @@ import Credits from "../Credits/Credits.js"
 import Draggable from 'react-draggable';
 import pcNoise from "../../Audio/Ambience.mp3";
 import typeNoise from "../../Audio/Typing.mp3";
-import MouseUp from "../../Audio/MouseUp.mp3";
-import MouseDown from "../../Audio/MouseDown.mp3";
+import MouseUp from "../../Audio/Mouse_up.mp3";
+import MouseDown from "../../Audio/Mouse_down.mp3";
 import './Desktop.css'; // Ensure styles do not conflict with 98.css
 import 'react-resizable/css/styles.css'; // Import CSS for resizable component
 import '98.css';
