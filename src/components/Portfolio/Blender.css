@@ -7,20 +7,20 @@
     src: url(../../Fonts/Millennium.ttf);
 }
 
-.Blender-content{
+.Blender-content {
     margin-left: 160px;
     width: calc(73% - 24px);
     font-style: bold;
     overflow: hidden; /* Ensures content is scrollable if it overflows */
     background-color: white;
-    width: 79vw;
+    width: 75vw;
     height: 85vh;
     word-wrap: break-word;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-.Blender{
+.Blender {
     font-family: MidnightBlack;
     font-size: 48px;
     margin-left: 12px;
@@ -28,17 +28,17 @@
     height: 70px;
 }
 
-.blenderHeader h1{
+.blenderHeader h1 {
     margin-top: 0px;
     font-family: Millennium;
     font-size: xx-large;
-    margin-left:10px;
+    margin-left: 10px;
     margin-bottom: 35px;
     height: 10px;
     color: black;
 }
 
-.Text{
+.Text {
     padding-left: 5px;
     font-family: 'Millennium';
     color: black;
@@ -48,12 +48,14 @@
     word-wrap: break-word;
 }
 
-.video1{
-    margin-left: 85px;
+.video1 {
+    flex: 1;
+    width: 10%;
+    height:auto;
+    margin-right: 20px;
 }
 
-.video1-caption{
-    padding-left: 85px;
+.video1-caption {
     font-family: MidnightBlack;
     color: black;
     font-style: oblique;
@@ -62,23 +64,57 @@
     word-wrap: break-word;
 }
 
-.Earth-images{
+/* Flexbox container for video and images */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.video1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video1 video {
+    width: 100%;
+    height: auto;
+}
+
+.video1-caption {
+    font-family: MidnightBlack;
+    color: black;
+    font-style: oblique;
+    font-size: 16px;
+    margin: 10px 0;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.Earth-image {
+    flex: 1;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
-    padding-left: 90px;
-    gap: 10px;
-    width: 20vw; /* 30% of the viewport width */
-    height: 10vw;
-    padding-bottom: 10px;
+    gap: 5px;
 }
 
-.earth-caption{
-    padding-left: 100px;
+.Earth-image img {
+    width: 100%;
+    max-width: 35vw; /* Adjust this value as needed */
+    height: auto;
+}
+
+.earth-caption {
     font-family: MidnightBlack;
     color: black;
     font-style: oblique;
     font-size: 16px;
-    margin: 0 12px;
+    margin-left:150px;
+    margin-top:0px;
     word-wrap: break-word;
 }
+

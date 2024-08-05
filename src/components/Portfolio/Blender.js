@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Blender.css';
 import VerticalMenu from '../VerticalMenu/verticalmenu';
 import Gargantua from "../../Videos/Gargantua.mp4";
-import Earth1 from "../../images/Earth3.png"
+import Earth1 from "../../images/Earth2.png"
 import Earth2 from "../../images/Earth4.png"
 
 const Blender = () => {
@@ -16,7 +16,7 @@ const Blender = () => {
                 <div className="Blender">
                     <h1>Renders</h1>
                 </div>
-                <hr class = "solid"></hr>
+                <hr className="solid"></hr>
                 <div className="blenderHeader">
                 <h1>
                     Blender
@@ -24,29 +24,26 @@ const Blender = () => {
                 </div>
                 <div className="Text">
                     <p>
-                        Blender has quickly become one of my favorite pieces of software to use and experiment with. It is one of the best rendering tools available for beginners, and it allows me to exercise my creative side when I feel inspired.
+                    Blender has quickly become one of my favorite pieces of software to use and experiment with. It is one of the best rendering tools available for beginners, allowing me to exercise my creative side when I feel inspired. I currently love creating space-based renders. With Interstellar being one of my favorite movies, I recreated the Gargantua black hole as seen in the film. I also created a photorealistic Earth that is customizable for different cloud coverage, sunlight, and other variables. In addition to my space renders, I have been experimenting with different particle effects, trying to emulate the flying atomic particles and molecules as seen in Oppenheimer. This has allowed me to push the boundaries of my skills and learn a whole new side of the software with efficient particle simulations and lighting setups.  
                     </p>
                     <p>
-                        With one of my favorite movies being Interstellar by Christopher Nolan, I've recently been interested in creating space-themed renders involving planets, blackholes, and nebulae. The video below is my attempt at creating the Gargantua blackhole from Interstellar. For this particular animation I had to watch and learn a few different tutorials in order to get the look and feel of the scene correct. The math calculations in the node graph for the gravity lensing effect are the byproduct of using the spherical and cartesian coordinates of the accretion disk's texture coordinates, and running those values through several multiply, add, divide, float curve, and Musgrave texture nodes. The infinite loop of the video was achieved in Adobe Premiere Pro by splicing the clip in the middle, playing the second half of the video first, then applying a cross dissolve effect on the splice.
+                    My goal is to create an engaging short film putting all of these renders together into one cohesive and captivating showcase.
                     </p>
-                    <video className="video1" width="500" height="300" autoplay controls muted loop>
-                        <source src={Gargantua} type="video/mp4"></source>
-                    </video>
-                    <p className="video1-caption">
-                            Figure 1: Gargantua zoomed in. Rendered at 1920x1080 with 128 samples.
-                        </p>
-                    
-
-                    <p>
-                        Another scene I worked on was a photo realistic earth as seen from Low-Earth-Orbit. This project utilized official Earth surface scans, heightmaps, and cloud maps provided by Nasa. The surface is achieved by using a texture coordinate node with several layers of masking to effectively separate the ocean from the land. This allows me to control the specularity and roughness to ensure the land appears rougher and the ocean has some shine to it. To produce the atmosphere, the surface sphere was duplicated with a new material applied to it. The new material uses several Vector and Math nodes to dissipate the blueish tint and "raise" it above the surface.
-                    </p>
-                    <div className="Earth-images">
-                    <img src = {Earth1} alt="" />
-                    <img src = {Earth2} alt="" />
+                    <div className="flex-container">
+                        <div className="video1">
+                            <video width="100%" height="auto" autoplay controls muted loop>
+                                <source src={Gargantua} type="video/mp4"></source>
+                            </video>
+                            <p className="video1-caption">
+                                Figure 1: Gargantua zoomed in. Rendered at 1920x1080 with 128 render samples.
+                            </p>
+                        </div>
+                        <div className="Earth-image">
+                            <img src={Earth1} alt="Earth 1"/>
+                        </div>
                     </div>
                     <p className="earth-caption">
-                        Figures 2, 3: Earth closeups rendered at 1920x1080 with 64 samples.
-
+                        Figure 2: Earth closeup rendered at 1920x1080 with 64 render samples.
                     </p>
                 </div>
             </div>
@@ -54,4 +51,4 @@ const Blender = () => {
     );
 };
 
-export default Blender
+export default Blender;
