@@ -5,7 +5,8 @@ import './Blender.css';
 import VerticalMenu from '../VerticalMenu/verticalmenu';
 import Gargantua from "../../Videos/Gargantua.mp4";
 import Earth1 from "../../images/Earth2.png";
-import Earth2 from "../../images/Earth4.png";
+import Particle1 from "../../Videos/RedBlue.mkv";
+import Particle2 from "../../Videos/Sparks.mkv";
 
 const Blender = () => {
     return (
@@ -36,6 +37,18 @@ const Blender = () => {
                         <div className="media-item">
                             <img src={Earth1} alt="Earth 1"/>
                             <p className="caption">Figure 2: Earth closeup. Rendered at 1920x1080 with 64 render samples.</p>
+                        </div>
+                        <div className="media-item">
+                            <video width="100%" height="auto" autoplay controls muted loop>
+                                <source src={Particle1} type="video/mp4"></source>
+                            </video>
+                            <p className="caption">Figure 3: Red & Blue particle simulation. Rendered at 1920x1080 with 64 samples and 25,000 particles.</p>
+                        </div>
+                        <div className="media-item">
+                            <video width="100%" height="auto" autoplay controls muted loop>
+                                <source src={Particle2} type="video/mp4"></source>
+                            </video>
+                            <p className="caption">Figure 4: Swirling sparks particle simulation. Rendered at 1920x1080 with 64 samples and 25,000 particles.</p>
                         </div>
                     </div>
                 </div>
