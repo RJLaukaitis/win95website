@@ -6,7 +6,18 @@
     font-family: Millenium;
     src: url(../../Fonts/Millennium.ttf);
 }
-
+.Page-Content{
+    margin-left: 161px;
+    width: calc(73% - 24px);
+    font-style: bold;
+    overflow: hidden;
+    background-color: white;
+    width: 79vw;
+    height: 85vh;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 .Projects-content{
     margin-left: 160px;
