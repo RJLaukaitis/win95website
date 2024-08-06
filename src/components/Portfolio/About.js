@@ -22,9 +22,6 @@ const About = () => {
                 <p>
                     I'm currently a sophomore at Lehigh University working towards a dual bachelors of science degree in Computer Science & Business.
                 </p>
-                <p>
-                    Thank you for stopping by. I built this page from the ground up in React,JavaScript,CSS and Three. The inspiration behind this site came from Henry Heffernan's 2022 portfolio, it can be found <a href="https://henryheffernan.com/">here</a>. I loved the blend of mixing 2D and 3D and thought it was super creative. Please enjoy.
-                </p>
             </div>
             <Resume/>
             {/* <hr class= "solid"></hr> */}

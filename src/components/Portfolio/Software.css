@@ -96,6 +96,22 @@
     height: auto;
 }
 
+.Media1 {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 40vh;
+}
+
+.caption1 p{
+    font-family: MidnightBlack;
+    padding-left: 250px;
+    color: black;
+    font-style: oblique;
+    font-size: 16px;
+}
+
 .captions p{
     display: flex;
     flex-direction: row;
@@ -135,7 +151,7 @@
 }
 
 .website h1 {
-    font-family: Millennium;
+    font-family: MidnightBlack;
     font-size: xx-large;
     font-style: normal;
     height: 10px;

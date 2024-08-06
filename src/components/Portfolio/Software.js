@@ -5,6 +5,8 @@ import './Software.css';
 import VerticalMenu from '../VerticalMenu/verticalmenu';
 import alchemyHome from "../../images/AlchemHome.png"
 import Gargantua from "../../Videos/Gargantua.mp4";
+import draft from "../../images/websiteDraft.png";
+import final from "../../images/final.png";
 
 
 const Software = () => {
@@ -25,17 +27,20 @@ const Software = () => {
                 <h1>RonaldLaukaitis.com </h1>
                 <h2>April-August 2024</h2>
                         <p>
-                        I always wanted to create my own personal portfolio website and I became inspired after seeing Henry Heffernan's 2022 showcase. I decided to follow his same framework and started working on the windowsOS portion in April of 2024. This was my first time delving into JS and CSS so it took some time getting adjusted however I picked it up pretty quick and was able to create the desktop page in a single sitting. Once I had this framework in place I started working on the actual portfolio page and chipped away at it during the rest of my school year.
+                        I always wanted to create my own personal portfolio website and I became inspired after seeing Henry Heffernan's 2022 showcase, which can be found <a href= "https://henryheffernan.com/">here</a>. I decided to follow his same framework and started working on the windowsOS portion in April of 2024. This was my first time delving into JS and CSS so it took some time getting adjusted however I picked it up pretty quick and was able to create the desktop page in a single sitting. Once I had this framework in place I started working on the actual portfolio page and chipped away at it during the rest of my school year.
                         </p>
+                        <div className="Media1">
+                        <img src = {draft} alt="" />
+                        <img src = {final}></img>
+                        </div>
+                        <div className="caption1">
+                            <p>
+                                Figure 1: Comparison between first iteration and final iteration of the outer-site.
+                            </p>
+                        </div>
                         <p>
-                            The 3d portion of the website was created using THREEjs and blender. Blender was very intuitive to model the office portion of the scene, it also allowed me to bake all the textures with the blender lighting so I wouldn't have to rely on the THREEjs lighting system. Using baked textures gave everything a realistic look which couldn't have been achieved elsewhere.
-                        </p>
+                            The 3d portion of the website was created using THREEjs and blender. Once i had the office scene laid out, I baked the lighting from blender into individual objects' textures giving everything a realistic and polished look. Having never worked with THREEjs before it posed quite a challenge to initially begin, however after a couple weeks of trial and error, I was able to get my model displaying properly and had the foundation set.
                 
-                        <p>
-                            
-
-
-
                         </p>
             </div>
 
