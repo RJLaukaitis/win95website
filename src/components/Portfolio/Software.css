@@ -10,7 +10,6 @@
 
 .Page-Content{
     margin-left: 161px;
-    width: calc(73% - 24px);
     font-style: bold;
     overflow: hidden;
     background-color: white;
@@ -86,14 +85,28 @@
     word-wrap: break-word;
 }
 
-.Media {
-    justify-content: space-around;
+.mediaContainer {
     display: flex;
     flex-direction: row;
-    padding-left: 10px;
-    gap: 10px;
-    width: 30vw;
+    margin-left: 35px;
+    gap: 50px; /* Adjust gap between image and video */
+    align-items: center; /* Align items vertically center */
+}
+
+.mediaImage, .mediaVideo {
+    max-width: 100%;
     height: auto;
+
+}
+
+.mediaImage {
+    width: auto;
+    height: 100%; /* Maintain aspect ratio */
+}
+
+.mediaVideo {
+    width: 470px;
+    height: auto; /* Maintain aspect ratio */
 }
 
 .Media1 {
@@ -104,7 +117,7 @@
     height: 40vh;
 }
 
-.caption1 p{
+.webCaption{
     font-family: MidnightBlack;
     padding-left: 250px;
     color: black;
@@ -116,7 +129,7 @@
     display: flex;
     flex-direction: row;
     padding-left: 80px;
-    gap: 320px;
+    gap: 230px;
     font-family: MidnightBlack;
     color: black;
     font-style: oblique;
@@ -170,8 +183,8 @@
     height:30px;
 }
 
-.website p{
-    font-family: Millennium;
+.paragraph p{
+    font-family: Millenium;
     font-size: 16px;
     word-wrap: break-word;
     margin-left: 10px;
