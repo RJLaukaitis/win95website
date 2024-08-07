@@ -8,10 +8,10 @@
 }
 .Page-Content{
     margin-left: 161px;
-    width: calc(73% - 24px);
     font-style: bold;
     overflow: hidden;
     background-color: white;
+    max-width:75vw;
     height: 85vh;
     word-wrap: break-word;
     overflow-x: hidden;
