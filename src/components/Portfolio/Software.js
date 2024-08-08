@@ -76,7 +76,7 @@ const Software = () => {
                         I built Alchemy in June of 2024, after solana memecoins started taking over my twitter feed. Noticing the lucrative opportunity some of these coins could offer, I started planning out what tools would be most useful for ending up on the winning side of trades. It took a lot of research and experimentation with different API's and services, however, I was able to develop a system that could reliably monitor and evaluate coins in real time. The result was a robust and reliable trading bot that allows users to capitalize on emerging trends in the cryptocurrency market.
                         </p>
                         <p>
-                        The github repo is not public as of due to there being sensitive data, however if you wish to see parts of the source code please feel free to contact me.
+                        The github repo is not public as of now due to there being sensitive data, however if you wish to see parts of the source code please feel free to contact me.
                         </p>
                         <div className="features">
                             <h3> Features:</h3>
