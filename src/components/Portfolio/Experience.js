@@ -15,7 +15,16 @@ const Experience = () => {
             <div className="introduction">
                 Here is a quick summary of my past work experience and roles within several companies.
             </div>
-            <hr class="solid"></hr> 
+            <hr class="solid"></hr>
+            <div className="Research">
+                <h1>Lehigh University</h1>
+                <h2>Undergraduate Research Assistant, May 2024 - August 2024</h2>
+                <p>
+                • Collaborated with a team of five students to develop a web application for tracking student integrity violations, enabling faculty to report and store instances of academic misconduct.<br></br>
+                • Redesigned the user interface to enhance usability and streamline the reporting process for faculty members.<br></br>
+                • Re-engineered the form component to optimize functionality, reducing lines of code and simplifying implementation..<br></br>
+                </p>
+            </div>
             <div className="Willows">
                 <h1>Willows Run Golf Club</h1>
                 <h2>Outside Staff, May 2023 - August 2023</h2>
