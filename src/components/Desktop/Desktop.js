@@ -154,7 +154,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    defaultPosition={{x: 400, y: 10}}
+                    defaultPosition={{x: 220, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
                             <div className="title-bar">

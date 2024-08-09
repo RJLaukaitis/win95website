@@ -4,14 +4,11 @@ import './Credits.css';
 
 const credits = [
     { role: 'Programming', name: 'Ronald Laukaitis' },
-    { role: 'Monitor Model', name: 'Ronald Laukaitis' },
+    { role: 'PC setup Models', name: 'Ronald Laukaitis' },
     { role: 'Environment Models', name: 'Sean Nicolas' },
-    { role: 'Ambient PC sfx', name: 'Kyle Seeley' },
     { role: 'Windows Icons', name: 'Microsoft' },
     { role: 'Office Ambience', name: 'Sounds Recorded' },
     { role: 'Solitaire and Minesweeper', name: 'Isaiah Odhner' },
-    { role: 'Office Ambience', name: 'Sounds Recorded' },
-    { role: 'Business Card', name: 'Pierce&Pierce' },
     { role: 'Inspiration/Reference', name: 'Henry Heffernan' },
     // Add more credits as needed
 ];
