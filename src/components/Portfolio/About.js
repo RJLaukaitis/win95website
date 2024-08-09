@@ -58,6 +58,7 @@ const About = () => {
                 </p>
             </div>
                 <div className="ME-image">
+                    <img src="MEImage"></img>
     
                 </div>
                 <div className="interest-paragraph-2">
