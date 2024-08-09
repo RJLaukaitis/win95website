@@ -37,8 +37,8 @@ function Desktop() {
     const solitaireBounds = {
         left: 0,
         top: 0,
-        right: window.innerWidth - 800, 
-        bottom: window.innerHeight - 400, 
+        right: window.innerWidth - 1400, 
+        bottom: window.innerHeight - 670, 
     };
 
     const minesweeperBounds = {
