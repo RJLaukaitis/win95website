@@ -15,8 +15,7 @@
     flex-direction: column;
     align-items: start;
     flex-wrap: wrap;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow:hidden;
 
 }
 

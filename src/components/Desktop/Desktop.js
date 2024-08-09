@@ -81,6 +81,13 @@ function Desktop() {
         };
     }, []);
 
+    const bounds = {
+        left: 0,
+        top: 0,
+        right: 200, // Adjust as needed based on the window size
+        bottom:30, // Adjust as needed based on the window size
+    };
+
     return (
         <div className="desktop">
             <Icon label="Portfolio" imgSrc={PortfolioIcon} onClick={() => setIsPortfolioOpen(true)} />
@@ -88,6 +95,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
+                    bounds={bounds}
                     defaultPosition={{x: 100, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
@@ -110,6 +118,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
+                    bounds={bounds}
                     defaultPosition={{x: 50, y: 25}}
                 >
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
@@ -132,6 +141,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
+                    bounds={bounds}
                     defaultPosition={{x: 500, y: 35}}
                 >
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
@@ -154,6 +164,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
+                    bounds={bounds}
                     defaultPosition={{x: 220, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
@@ -176,6 +187,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
+                    bounds={bounds}
                     defaultPosition={{x: 200, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
