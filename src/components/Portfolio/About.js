@@ -70,9 +70,12 @@ const About = () => {
                 <p>
                     Thank you for taking time to read about myself! I hope you find the website interesting and I look forward to possibly connecting and sharing more about my passions and interests. Have fun looking through the site and let me know if you have any feedback!
                 </p>
-                <p2>
+            </div>
+            <div className="compositeCaption">
+                <p>
+                    Figure 2: My 2024 composite photo.
+                </p>
 
-                </p2>
             </div>
             </div>
         </div>

@@ -120,6 +120,7 @@
     float: right;
     margin-right: 20px;
     width: 180px;
+    margin-top:20px;
     height: auto;
 }
 
@@ -130,5 +131,15 @@
     font-style: normal;
     font-size: 16px;
     margin: 0 12px;
+    word-wrap: break-word;
+}
+
+.compositeCaption {
+    margin-left: 58vw;
+    font-family: MidnightBlack;
+    color: black;
+    font-style: oblique;
+    font-size: 16px;
+    margin-top: 0px;
     word-wrap: break-word;
 }
