@@ -28,38 +28,38 @@ function Desktop() {
     const [isDragging, setIsDragging] = useState(false);
 
     const portfolioBounds = {
-        left: 0,
-        top: 0,
-        right: window.innerWidth - 1350, 
-        bottom: window.innerHeight - 580, 
+        left: 5,
+        top: 5,
+        right: window.innerWidth -1090, 
+        bottom: window.innerHeight - 800, 
     };
 
     const solitaireBounds = {
-        left: 0,
-        top: 0,
-        right: window.innerWidth - 1400, 
-        bottom: window.innerHeight - 670, 
+        left: 5,
+        top: 5,
+        right: window.innerWidth - 1130, 
+        bottom: window.innerHeight - 810, 
     };
 
     const minesweeperBounds = {
-        left: 0,
-        top: 0,
-        right: window.innerWidth - 800,
-        bottom: window.innerHeight - 400, 
+        left: 5,
+        top: 5,
+        right: window.innerWidth - 400,
+        bottom: window.innerHeight - 500, 
     };
 
     const cardBounds = {
-        left: 0,
-        top: 0,
-        right: window.innerWidth - 400, 
-        bottom: window.innerHeight - 300,
+        left: 5,
+        top: 5,
+        right: window.innerWidth - 900, 
+        bottom: window.innerHeight - 800,
     };
 
     const creditsBounds = {
-        left: 0,
-        top: 0,
-        right: window.innerWidth - 500,
-        bottom: window.innerHeight - 400,
+        left: 5,
+        top: 5,
+        right: window.innerWidth - 900,
+        bottom: window.innerHeight - 800,
 
     }
 

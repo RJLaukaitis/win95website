@@ -3,7 +3,7 @@
     overflow: hidden;
     width: 70vw;
     background-color: white;
-    height: 85vh;
+    height: 60vh;
     word-wrap: break-word;
     overflow-x: hidden;
     overflow-y:hidden;
@@ -26,7 +26,7 @@
   }
   
   .card {
-    margin-left:270px;
+    margin-left:190px;
     margin-top: 110px;
     width: 520px;
     height: 520px;
