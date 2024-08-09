@@ -27,7 +27,41 @@ function Desktop() {
     const [isCreditsOpen, setIsCreditsOpen] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
 
+    const portfolioBounds = {
+        left: 0,
+        top: 0,
+        right: window.innerWidth - 1350, 
+        bottom: window.innerHeight - 580, 
+    };
 
+    const solitaireBounds = {
+        left: 0,
+        top: 0,
+        right: window.innerWidth - 800, 
+        bottom: window.innerHeight - 400, 
+    };
+
+    const minesweeperBounds = {
+        left: 0,
+        top: 0,
+        right: window.innerWidth - 800,
+        bottom: window.innerHeight - 400, 
+    };
+
+    const cardBounds = {
+        left: 0,
+        top: 0,
+        right: window.innerWidth - 400, 
+        bottom: window.innerHeight - 300,
+    };
+
+    const creditsBounds = {
+        left: 0,
+        top: 0,
+        right: window.innerWidth - 500,
+        bottom: window.innerHeight - 400,
+
+    }
 
     useEffect(() => {
         const playClickUPSound = () => {
@@ -95,7 +129,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    bounds={bounds}
+                    bounds={portfolioBounds}
                     defaultPosition={{x: 100, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
@@ -118,7 +152,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    bounds={bounds}
+                    bounds={solitaireBounds}
                     defaultPosition={{x: 50, y: 25}}
                 >
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
@@ -141,7 +175,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    bounds={bounds}
+                    bounds={minesweeperBounds}
                     defaultPosition={{x: 500, y: 35}}
                 >
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
@@ -164,7 +198,7 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    bounds={bounds}
+                    bounds={cardBounds}
                     defaultPosition={{x: 220, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
@@ -187,7 +221,8 @@ function Desktop() {
                 <Draggable handle=".title-bar"
                     onStart={()=> setIsDragging(true)}
                     onStop={()=> setIsDragging(false)}
-                    bounds={bounds}
+                    bounds={creditsBounds}
+
                     defaultPosition={{x: 200, y: 10}}
                 >       
                         <div className={`window ${isDragging ? 'dragging' : ''}`}>
