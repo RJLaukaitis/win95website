@@ -11,7 +11,7 @@ import loadingGif from '../../images/loading.gif';
 const Projects = () => {
     const navigate = useNavigate();
     const categories = [
-        { name: "Software Projects",icon:softwareGif, path: "/software" },
+        { name: "Software",icon:softwareGif, path: "/software" },
         { name: "Renders",icon:blenderGif, path: "/blender" },
         { name: "More coming soon!", icon:loadingGif, path: "/projects" }
     ];
