@@ -12,8 +12,8 @@
     font-style: bold;
     overflow: hidden; /* Ensures content is scrollable if it overflows */
     background-color: white;
-    max-width: 75vw;
-    max-height: 79.3vh;
+    max-width: 73vw;
+    max-height: 80vh;
     word-wrap: break-word;
     overflow-x: hidden;
     overflow-y: auto;
@@ -143,7 +143,7 @@ hr.solid {
 
 .media-item video,
 .media-item img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
