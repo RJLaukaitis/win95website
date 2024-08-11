@@ -9,6 +9,8 @@
   color: white;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
+  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .header {

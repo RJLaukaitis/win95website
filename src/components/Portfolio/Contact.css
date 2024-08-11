@@ -100,7 +100,7 @@
     width: 62.5%;
     height:75%;
     font-size: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-left: 5px;
     padding-bottom: 5px;
 }
@@ -113,8 +113,9 @@
 }
 .send-message-button {
     z-index: 15;
-    margin-right: 480px;
+    width:10%;
     font-size: 12px;
+    margin-right: 300px;
 }
  
   
