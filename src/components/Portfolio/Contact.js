@@ -45,7 +45,7 @@ const Contact = () => {
 
     return (
         <div className="contact-container">
-            <VerticalMenu/>
+            <VerticalMenu showSubmenu={false}/>
             <div className="contact-content">
                 <div className="headingContainer">
                     <h1 className="ContactHeader">

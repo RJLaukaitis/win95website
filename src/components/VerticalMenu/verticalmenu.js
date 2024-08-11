@@ -2,9 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './VerticalMenu.css';
 
-function VerticalMenu() {
-  const activeStyle = { color: 'red' }; // Style object for the active state
-
+function VerticalMenu({ showSubmenu }) {
+  const activeStyle = { color: 'red' };
 
   return (
     <div className="vertical-menu">
@@ -20,6 +19,18 @@ function VerticalMenu() {
       <NavLink to="/projects" activeStyle={activeStyle} className="menu-item">
         <span className="star">*</span> Projects
       </NavLink>
+
+      {showSubmenu && (
+        <>
+        <NavLink to="/software" activeStyle={activeStyle} className="submenu-item">
+            <span className="star">*</span> Software
+          </NavLink>
+          <NavLink to="/blender" activeStyle={activeStyle} className="submenu-item">
+            <span className="star">*</span> Renders
+          </NavLink>
+        </>
+      )}
+
       <NavLink to="/contact" activeStyle={activeStyle} className="menu-item">
         <span className="star">*</span> Contact
       </NavLink>

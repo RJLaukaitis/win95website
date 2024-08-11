@@ -11,11 +11,14 @@ import Particle2 from "../../Videos/Sparks.mkv";
 const Blender = () => {
     return (
         <div className="page-layout">
-            <VerticalMenu/>
+            <VerticalMenu showSubmenu={true}/>
             <div className="Blender-content">
                 <div className="Blender">
                     <h1>Renders</h1>
                 </div>
+                <div className="introduction">
+                Here are some of my 3D renders I've worked on.
+            </div>
                 <hr className="solid"></hr>
                 <div className="Text">
                     <p>

@@ -13,7 +13,7 @@ const About = () => {
 
     return (
         <div className="page-layout">
-            <VerticalMenu/>
+            <VerticalMenu showSubmenu={false}/>
             <div className="About-content">
             <div className="Welcome">
             <h1>Welcome</h1>

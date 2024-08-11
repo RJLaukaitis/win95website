@@ -5,7 +5,7 @@ import VerticalMenu from '../VerticalMenu/verticalmenu';
 const Experience = () => {
     return (
         <div className="Page-Content">
-            <VerticalMenu/>
+            <VerticalMenu showSubmenu={false}/>
             <div className="Experience-content">
             <div className="ExperienceHeader">
                 <h1>

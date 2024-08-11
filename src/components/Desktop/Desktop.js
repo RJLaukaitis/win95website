@@ -8,8 +8,8 @@ import pcNoise from "../../Audio/Ambience.mp3";
 import typeNoise from "../../Audio/Typing.mp3";
 import MouseUp from "../../Audio/mouse_up.mp3";
 import MouseDown from "../../Audio/mouse_down.mp3";
-import './Desktop.css'; // Ensure styles do not conflict with 98.css
-import 'react-resizable/css/styles.css'; // Import CSS for resizable component
+import './Desktop.css';
+import 'react-resizable/css/styles.css';
 import '98.css';
 
 import PortfolioIcon from "../../images/DocumentIcon.png";
@@ -87,7 +87,7 @@ function Desktop() {
                 startTime = 0;
             }
             typesound.currentTime = startTime;
-            typesound.volume=0.1;
+            typesound.volume=0.3;
             typesound.play();
 
             clearTimeout(typingTimeout); // Clear any existing timeout

@@ -22,7 +22,7 @@ const Projects = () => {
 
     return (
         <div className="page-layout">
-            <VerticalMenu/>
+            <VerticalMenu showSubmenu={false}/>
             <div className="Projects-content">
             <div className="Projects">
             <h1>Projects</h1>

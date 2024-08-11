@@ -12,7 +12,7 @@ import final from "../../images/final.png";
 const Software = () => {
     return (
         <div className="Page-Content">
-            <VerticalMenu/>
+            <VerticalMenu showSubmenu={true}/>
             <div className="softwareHeader">
                 <h1>
                     Software
