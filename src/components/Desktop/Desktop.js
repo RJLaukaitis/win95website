@@ -8,6 +8,9 @@ import pcNoise from "../../Audio/Ambience.mp3";
 import typeNoise from "../../Audio/Typing.mp3";
 import MouseUp from "../../Audio/mouse_up.mp3";
 import MouseDown from "../../Audio/mouse_down.mp3";
+import Confetti from 'react-confetti';
+
+import useKonamiCode from "../SecretCode/Secret.js";
 import './Desktop.css';
 import 'react-resizable/css/styles.css';
 import '98.css';
@@ -26,6 +29,8 @@ function Desktop() {
     const [isMineOpen, setIsMineOpen] = useState(false);
     const [isCreditsOpen, setIsCreditsOpen] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
+    const [showConfetti, setShowConfetti] = useState(false);
+
 
     const portfolioBounds = {
         left: 5,
@@ -62,8 +67,13 @@ function Desktop() {
         bottom: window.innerHeight - 800,
 
     }
+    useKonamiCode(() => {
+        setShowConfetti(true);
+        setTimeout(() => setShowConfetti(false), 5000); // Stop confetti after 5 seconds
+    });
 
     useEffect(() => {
+
         const playClickUPSound = () => {
             var mouseUpsound = new Audio(MouseUp);
             mouseUpsound.volume =0.15;
@@ -124,6 +134,7 @@ function Desktop() {
 
     return (
         <div className="desktop">
+        {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
             <Icon label="Portfolio" imgSrc={PortfolioIcon} onClick={() => setIsPortfolioOpen(true)} />
             {isPortfolioOpen && (
                 <Draggable handle=".title-bar"
