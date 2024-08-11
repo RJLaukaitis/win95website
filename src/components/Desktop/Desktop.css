@@ -95,7 +95,7 @@ html, body, #root {
 .window {
     position: absolute;
     overflow: hidden;
-    max-width: 90vw;
+    max-width: 91vw;
     max-height: 90vh;
     z-index: 10;
 }
