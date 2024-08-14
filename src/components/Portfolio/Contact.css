@@ -58,10 +58,11 @@
 .socials {
     display:flex;
     margin-left: 40vw;
+    gap:10px;
 }
 
 .socials img{
-    width: 35px;
+    width: 55px;
     height:auto;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-style: outset;
@@ -94,12 +95,21 @@
     /* add more styles */
 }
 
-.contact-form input,
 .contact-form textarea {
     font-family: Millennium;
     width: 62.5%;
-    height:75%;
-    font-size: 14px;
+    height:90px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
+
+.contact-form input{
+    font-family: Millennium;
+    width: 62.5%;
+    min-height:30px;
+    font-size: 16px;
     margin-bottom: 10px;
     margin-left: 5px;
     padding-bottom: 5px;
