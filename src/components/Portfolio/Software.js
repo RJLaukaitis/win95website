@@ -59,7 +59,7 @@ const Software = () => {
                         </p>
                         <div className="alchemyHome">
                         <div className="mediaContainer">
-                        <img src = {alchemyHome} alt="Alchemy home" className="mediaImage"/>
+                        {/* <img src = {alchemyHome} alt="Alchemy home" className="mediaImage"/> */}
                         <video controls muted loop className="mediaVideo">
                             <source src={alchemyDemo} type="video/mp4" />
                         </video>
@@ -68,8 +68,7 @@ const Software = () => {
                         </div>
                         <div className="captions">
                             <p>
-                            <span>Figure 2: Alchemy home screen.  </span>
-                            <span>Figure 3: Demo of the Telegram module</span>        
+                            <span>Figure 2: Demo of the Telegram module</span>        
                             </p>
                         </div>
                         <p>

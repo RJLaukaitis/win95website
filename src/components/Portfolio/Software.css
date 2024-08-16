@@ -68,13 +68,6 @@
     font-weight: 100;
 }
 
-.alchemyHome img{
-    width: 30vw; 
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 .alchemyHome p{
     padding-left: 75px;
@@ -85,13 +78,7 @@
     word-wrap: break-word;
 }
 
-.mediaContainer {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-    gap: 20px; /* Adjust gap between image and video */
-    align-items: center; /* Align items vertically center */
-}
+
 
 .mediaImage, .mediaVideo {
     max-width: 100%;
@@ -105,7 +92,8 @@
 }
 
 .mediaVideo {
-    width: 500px;
+    width: 900px;
+    margin-left:10px;
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -129,7 +117,7 @@
 .captions p{
     display: flex;
     flex-direction: row;
-    padding-left: 80px;
+    padding-left: 300px;
     gap: 230px;
     font-family: MidnightBlack;
     color: black;

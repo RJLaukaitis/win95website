@@ -97,7 +97,7 @@ function Desktop() {
                 startTime = 0;
             }
             typesound.currentTime = startTime;
-            typesound.volume=0.3;
+            typesound.volume=0.15;
             typesound.play();
 
             clearTimeout(typingTimeout); // Clear any existing timeout
