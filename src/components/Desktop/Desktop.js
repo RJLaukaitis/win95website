@@ -108,7 +108,7 @@ function Desktop() {
             }, duration * 1000);
         };
 
-        window.addEventListener('keypress', playTypingSound);
+        window.addEventListener('keydown', playTypingSound);
 
         // Play ambient sound
         const ambience = new Audio(pcNoise);
@@ -134,7 +134,7 @@ function Desktop() {
 
     return (
         <div className="desktop">
-        {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
+        {showConfetti && <Confetti style={{width: window.innerWidth,height: window.innerHeight,overflow: "hidden"}}/>}
             <Icon label="Portfolio" imgSrc={PortfolioIcon} onClick={() => setIsPortfolioOpen(true)} />
             {isPortfolioOpen && (
                 <Draggable handle=".title-bar"

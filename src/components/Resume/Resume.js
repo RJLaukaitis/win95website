@@ -17,7 +17,7 @@ const Resume = () =>{
                 </h3>
             </div>
             <div className='dtext'>
-                <a href={Resumepdf} download="RJLResumeSP22">Click here to download!</a>
+                <a href={Resumepdf} download="RJLResume">Click here to download!</a>
             </div>
         </div>
     </div>
