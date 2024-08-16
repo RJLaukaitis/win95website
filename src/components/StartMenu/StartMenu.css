@@ -76,16 +76,11 @@
     font-family: sans-serif;
     font-weight: bold;
     font-size: 250%;
-    font-style: italic;
-    left: 5px;
-    top: 77px;
-    width: 50px;
+    left: 6px;
+    top: 75px;
+    width: 10px;
     bottom: 0;
     background: #808080;
-    color: white;
+    color: #c0c0c0;
     white-space: nowrap;
-    background: #50B3CF;
-        background: linear-gradient(to right, #50B3CF 28%, #0DCF4B 52%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
