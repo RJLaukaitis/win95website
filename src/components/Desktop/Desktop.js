@@ -133,7 +133,7 @@ function Desktop() {
     };
 
     return (
-        <div className="desktop">
+        <div className="desktop" style={{overflow: "hidden"}}>
         {showConfetti && <Confetti style={{width: window.innerWidth,height: window.innerHeight,overflow: "hidden"}}/>}
             <Icon label="Portfolio" imgSrc={PortfolioIcon} onClick={() => setIsPortfolioOpen(true)} />
             {isPortfolioOpen && (

@@ -22,7 +22,7 @@ const Blender = () => {
                 <hr className="solid"></hr>
                 <div className="Text">
                     <p>
-                        Blender has quickly become one of my favorite pieces of software to use and experiment with. It is one of the best rendering tools available for beginners, allowing me to exercise my creative side when I feel inspired. I currently love creating space-based renders. With Interstellar being one of my favorite movies, I recreated the Gargantua black hole as seen in the film. I also created a photorealistic Earth that is customizable for different cloud coverage, sunlight, and other variables. In addition to my space renders, I have been experimenting with different particle effects, trying to emulate the flying atomic particles and molecules as seen in the film Oppenheimer. Examples of these renders are shown below.
+                    Blender has quickly become one of my favorite creative tools, offering a great way for beginners to explore rendering. I’m particularly drawn to space-based scenes, inspired by Interstellar, I recreated the Gargantua black hole and created a photorealistic Earth with customizable settings like cloud coverage and sunlight. Recently, I’ve also been experimenting with particle effects, aiming to replicate the atomic visuals from Oppenheimer. Below are some examples of these renders.
                     </p>
                     <div className="flex-container">
                         <div className="media-item">
