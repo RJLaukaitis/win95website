@@ -27,6 +27,7 @@ const Contact = () => {
 
 
     var sentAudio = new Audio(sentsound);
+    sentAudio.volume = 0.2;
     // Handle form submission
     const handleSubmit = (event) => {
         event.preventDefault();

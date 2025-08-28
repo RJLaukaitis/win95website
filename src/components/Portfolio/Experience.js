@@ -17,6 +17,24 @@ const Experience = () => {
             </div>
             <hr class="solid"></hr>
             <div className="Research">
+                <h1>Alpha Insight Partners</h1>
+                <h2>Software Engineer, July 2025 – Present</h2>
+                <p>
+                • Designed and implemented a threaded, asynchronous, campaign processing system, enabling parallel execution of AI analyses.<br></br>
+                • Developed data aggregation and analytics pipelines to collect, process, and visualize key metrics, providing insights and performance tracking for users.<br></br>
+                • Leveraged Amazon services such as RDS, ECS, and S3 with a design emphasis on scalability, modularity, and adaptability, to meet enterprise performance.<br></br>
+                </p>
+            </div>
+            <div className="Willows">
+                <h1>Airlingo</h1>
+                <h2>Fullstack Developer, May 2025 – July 2025</h2>
+                <p>
+                • Reduced LLM token consumption by up to 72% through prompt engineering and interaction flow optimizations, driving substantial cost savings at scale.<br></br>
+                • Designed comprehensive Cypress end-to-end (E2E) testing suites to improve frontend stability and reliability.<br></br>
+                • Built and deployed a role-based authentication system with fine grained permission controls.<br></br>
+                </p>
+            </div>
+            <div className="Research">
                 <h1>Lehigh University</h1>
                 <h2>Undergraduate Research Assistant, May 2024 - August 2024</h2>
                 <p>

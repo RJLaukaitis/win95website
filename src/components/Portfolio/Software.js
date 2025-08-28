@@ -6,6 +6,7 @@ import VerticalMenu from '../VerticalMenu/verticalmenu';
 import alchemyHome from "../../images/AlchemHome.png"
 import alchemyDemo from "../../Videos/AlchemyDemo.mp4";
 import draft from "../../images/websiteDraft.png";
+import bibCLI from "../../images/bibCLI.png";
 import final from "../../images/final.png";
 
 
@@ -23,6 +24,28 @@ const Software = () => {
             </div>
 
             <hr class="solid"></hr> 
+            <div className="website">
+                <h1>bibCLI </h1>
+                <h2>September 2024</h2>
+                    <div className="paragraph">
+                        <p>
+                        bibCLI is a fast and simple citation generator built in Rust, capable of creating citations in various formats (like APA, MLA8, etc.) from any user-submitted links. The idea for this project came when I needed to cite several sources for a paper I was working on. Frustrated with existing citation generator websites, which were always slow, filled with unskippable ads, and generally clunky to use, I decided to create my own tool to solve the problem.
+                        </p>
+                        </div>
+                        <div className="Media1">
+                        <img src = {bibCLI} alt="" />
+                        </div>
+                        <div className="webCaption">
+                            <p>
+                                Figure 1: Example citation
+                            </p>
+                        </div>
+                        <div className="paragraph">
+                        <p>
+                        With a focus on speed and simplicity, I chose Rust to develop the program. This project provided an ideal opportunity to enhance my Rust skills while addressing a common frustration I encountered. Rust’s performance and safety features enabled me to build a tool that is both highly efficient and reliable, effortlessly generating citations in various formats.
+                        </p>
+                        </div>
+            </div>
             <div className="website">
                 <h1>RonaldLaukaitis.com </h1>
                 <h2>April 2024 - August 2024</h2>

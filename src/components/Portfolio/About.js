@@ -20,7 +20,7 @@ const About = () => {
             </div>
             <div className="introduction">
                 <p>
-                    I'm currently a sophomore at Lehigh University working towards a dual bachelors of science degree in Computer Science & Business.
+                    I'm currently a Senior at Lehigh University working towards a dual bachelors of science degree in Computer Science & Business, with a minor degree in Data Science.
                 </p>
             </div>
             <Resume/>
@@ -46,7 +46,7 @@ const About = () => {
             </div>
             <div className="about-me-paragraph">
                 <p>
-                    Aside from academics, I am very involved on campus. I am apart of the Sigma Phi Epsilon fraternity where i hold an executive board position as the Vice President of the SigEp Learning Community. I am also a Stock Analyst for the TAMID consulting group, where we work closely with Israeli based startups looking to break into the U.S. market, offering support and advice on potential business decisions. 
+                    Aside from academics, I am very involved on campus. I am apart of the Sigma Phi Epsilon fraternity where i held an executive board position as the Vice President of the SigEp Learning Community. I was also a Stock Analyst for the TAMID consulting group, where we work closely with Israeli based startups looking to break into the U.S. market, offering support and advice on potential business decisions. 
                 </p>
                 <hr class= "solid"></hr>
                 <div className="interest-title">
@@ -57,7 +57,7 @@ const About = () => {
                 </div>
             <div className="interest-paragraph">
                 <p>
-                     In my free time, I really enjoy keeping busy and active. Hitting the gym after class or going for a run around campus is my go-to way to unwind and clear my mind. On the weekends, you can often find me out on the golf course. I've recently gotten back into playing and it has quickly become one of my favorite hobbies. Even though I usually shoot way over par, I can always be happy about the experience and come up with ways to improve for next time. I also love to lay-back and relax with some video games when I get finished with my work. Currently, my favorite game is Baldur's Gate 3.
+                     In my free time, I really enjoy keeping busy and active. Hitting the gym after class or going for a run around campus is my go-to way to unwind and clear my mind. On the weekends, you can often find me out on the golf course. I've recently gotten back into playing and it has quickly become one of my favorite hobbies. Even though I usually shoot way over par, I can always be happy about the experience and come up with ways to improve for next time. I also love to lay-back and relax with some video games when I get finished with my work. Currently, my favorite game is Alan Wake 2.
                 </p>
             </div>
                 <div className="interest-paragraph-2">
